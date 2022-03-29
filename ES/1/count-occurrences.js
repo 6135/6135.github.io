@@ -1,3 +1,3 @@
 function search(elementID) {
-    document.getElementById("resulthere").innerHTML = "" + int(Math.random()*100)
+    document.getElementById("resulthere").innerHTML = "" + Math.random()*100
 }
