@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic | Bootstrap HTML, VueJS, React, Angular, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel Admin Dashboard Theme
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!--begin::Head-->
+
+<head>
+    <base href="../" />
+    <title>Criar Proposta</title>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel versions. Grab your copy now and get life-time updates for free." />
+    <meta name="keywords"
+        content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="Metronic | Bootstrap HTML, VueJS, React, Angular, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel Admin Dashboard Theme" />
+    <meta property="og:url" content="https://keenthemes.com/metronic" />
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <!--begin::Fonts(mandatory for all pages)-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+    <!--end::Fonts-->
+    <!--begin::Vendor Stylesheets(used for this page only)-->
+    <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Vendor Stylesheets-->
+    <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+    <!--end::Global Stylesheets Bundle-->
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+
+<body id="kt_app_body" data-kt-app-layout="dark-sidebar" data-kt-app-header-fixed="true"
+    data-kt-app-sidebar-enabled="true" data-kt-app-sidebar-fixed="true" data-kt-app-sidebar-hoverable="true"
+    data-kt-app-sidebar-push-header="true" data-kt-app-sidebar-push-toolbar="true"
+    data-kt-app-sidebar-push-footer="true" data-kt-app-toolbar-enabled="true" class="app-default">
+    <!--begin::Theme mode setup on page load-->
+
+    <script>
+        var defaultThemeMode = "light";
+        var themeMode;
+        if (document.documentElement) {
+            if (document.documentElement.hasAttribute("data-theme-mode")) {
+                themeMode = document.documentElement.getAttribute("data-theme-mode");
+            } else {
+                if (localStorage.getItem("data-theme") !== null) {
+                    themeMode = localStorage.getItem("data-theme");
+                } else { themeMode = defaultThemeMode; }
+            } if (themeMode === "system") {
+                themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.setAttribute("data-theme", themeMode);
+        }
+    </script>
+
+    <!--end::Theme mode setup on page load-->
+    <!--begin::App-->
+    <div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+        <!--begin::Page-->
+        <div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+            <!--begin::Header-->
+            <div id="kt_app_header" class="app-header">
+                <!--begin::Header container-->
+
+                <!--end::Header container-->
+            </div>
+            <!--end::Header-->
+            <!--begin::Wrapper-->
+            <div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+                <!--begin::Sidebar-->
+                <div id="kt_app_sidebar" class="app-sidebar flex-column" data-kt-drawer="true"
+                    data-kt-drawer-name="app-sidebar" data-kt-drawer-activate="{default: true, lg: false}"
+                    data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start"
+                    data-kt-drawer-toggle="#kt_app_sidebar_mobile_toggle">
+                    <!--begin::Logo-->
+                    <div class="app-sidebar-logo px-6" id="kt_app_sidebar_logo">
+                        <!--begin::Logo image-->
+                        <!--end::Logo image-->
+                        <!--begin::Sidebar toggle-->
+                        <div id="kt_app_sidebar_toggle"
+                            class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary body-bg h-30px w-30px position-absolute top-50 start-100 translate-middle rotate"
+                            data-kt-toggle="true" data-kt-toggle-state="active" data-kt-toggle-target="body"
+                            data-kt-toggle-name="app-sidebar-minimize">
+                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr079.svg-->
+                            <span class="svg-icon svg-icon-2 rotate-180">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.5"
+                                        d="M14.2657 11.4343L18.45 7.25C18.8642 6.83579 18.8642 6.16421 18.45 5.75C18.0358 5.33579 17.3642 5.33579 16.95 5.75L11.4071 11.2929C11.0166 11.6834 11.0166 12.3166 11.4071 12.7071L16.95 18.25C17.3642 18.6642 18.0358 18.6642 18.45 18.25C18.8642 17.8358 18.8642 17.1642 18.45 16.75L14.2657 12.5657C13.9533 12.2533 13.9533 11.7467 14.2657 11.4343Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M8.2657 11.4343L12.45 7.25C12.8642 6.83579 12.8642 6.16421 12.45 5.75C12.0358 5.33579 11.3642 5.33579 10.95 5.75L5.40712 11.2929C5.01659 11.6834 5.01659 12.3166 5.40712 12.7071L10.95 18.25C11.3642 18.6642 12.0358 18.6642 12.45 18.25C12.8642 17.8358 12.8642 17.1642 12.45 16.75L8.2657 12.5657C7.95328 12.2533 7.95328 11.7467 8.2657 11.4343Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </span>
+                            <!--end::Svg Icon-->
+                        </div>
+                        <!--end::Sidebar toggle-->
+                    </div>
+                    <!--end::Logo-->
+                    <!--begin::sidebar menu-->
+                    <div class="app-sidebar-menu overflow-hidden flex-column-fluid"></div>
+                    <!--end::sidebar menu-->
+                    <!--begin::Footer-->
+                    <div class="app-sidebar-footer flex-column-auto pt-2 pb-6 px-6" id="kt_app_sidebar_footer">
+                        <a href="https://preview.keenthemes.com/html/metronic/docs"
+                            class="btn btn-flex flex-center btn-custom btn-primary overflow-hidden text-nowrap px-0 h-40px w-100"
+                            data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click"
+                            title="200+ in-house components and 3rd-party plugins">
+                            <span class="btn-label">Docs & Components</span>
+                            <!--begin::Svg Icon | path: icons/duotune/general/gen005.svg-->
+                            <span class="svg-icon btn-icon svg-icon-2 m-0">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.3"
+                                        d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM12.5 18C12.5 17.4 12.6 17.5 12 17.5H8.5C7.9 17.5 8 17.4 8 18C8 18.6 7.9 18.5 8.5 18.5L12 18C12.6 18 12.5 18.6 12.5 18ZM16.5 13C16.5 12.4 16.6 12.5 16 12.5H8.5C7.9 12.5 8 12.4 8 13C8 13.6 7.9 13.5 8.5 13.5H15.5C16.1 13.5 16.5 13.6 16.5 13ZM12.5 8C12.5 7.4 12.6 7.5 12 7.5H8C7.4 7.5 7.5 7.4 7.5 8C7.5 8.6 7.4 8.5 8 8.5H12C12.6 8.5 12.5 8.6 12.5 8Z"
+                                        fill="currentColor" />
+                                    <rect x="7" y="17" width="6" height="2" rx="1" fill="currentColor" />
+                                    <rect x="7" y="12" width="10" height="2" rx="1" fill="currentColor" />
+                                    <rect x="7" y="7" width="6" height="2" rx="1" fill="currentColor" />
+                                    <path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="currentColor" />
+                                </svg>
+                            </span>
+                            <!--end::Svg Icon-->
+                        </a>
+                    </div>
+                    <!--end::Footer-->
+                </div>
+                <!--end::Sidebar-->
+                <!--begin::Main-->
+                <div class="app-main flex-column flex-row-fluid " id="kt_app_main">
+                    <!--begin::Modal dialog-->
+                    <div class="modal-dialog pt-10" style="min-width:90%">
+                        <!--begin::Modal content-->
+                        <div class="modal-content modal-rounded">
+                            <!--begin::Modal header-->
+                            <div class="modal-header p-5">
+                                <!--begin::Modal title-->
+                                <h2>Criar Proposta</h2>
+                                <!--end::Modal title-->
+                            </div>
+                            <!--end::Modal header-->
+                            <!--begin::Modal body-->
+                            <div class="modal-body m-5">
+
+                                <!--begin::Stepper-->
+                                <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row end"
+                                    id="kt_stepper_example_clickable">
+                                    <!--begin::Aside-->
+                                    <div class="d-flex flex-row-auto w-300 w-lg-300px">
+                                        <!--begin::Nav-->
+                                        <div class="stepper-nav mb-5">
+                                            <!--begin::Step 1-->
+                                            <div class="stepper-item me-5 current" data-kt-stepper-element="nav"
+                                                data-kt-stepper-action="step">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper d-flex align-items-center">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">1</span>
+                                                    </div>
+                                                    <!--end::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Dados da proposta
+                                                        </h3>
+
+                                                        <!-- <div class="stepper-desc">
+                                                            Description
+                                                        </div> -->
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 1-->
+
+                                            <!--begin::Step 2-->
+                                            <div class="stepper-item me-5" data-kt-stepper-element="nav"
+                                                data-kt-stepper-action="step">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper d-flex align-items-center">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">2</span>
+                                                    </div>
+                                                    <!--begin::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Dados da proposta (cont.)
+                                                        </h3>
+
+                                                        <!-- <div class="stepper-desc">
+                                                            Description
+                                                        </div> -->
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 2-->
+
+                                            <!--begin::Step 3-->
+                                            <div class="stepper-item me-5" data-kt-stepper-element="nav"
+                                                data-kt-stepper-action="step">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper d-flex align-items-center">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">3</span>
+                                                    </div>
+                                                    <!--begin::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Entidade acolhedora
+                                                        </h3>
+
+                                                        <!-- <div class="stepper-desc">
+                                                            Description
+                                                        </div> -->
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Line-->
+                                                <div class="stepper-line h-40px"></div>
+                                                <!--end::Line-->
+                                            </div>
+                                            <!--end::Step 3-->
+
+                                            <!--begin::Step 4-->
+                                            <div class="stepper-item me-5" data-kt-stepper-element="nav"
+                                                data-kt-stepper-action="step">
+                                                <!--begin::Wrapper-->
+                                                <div class="stepper-wrapper d-flex align-items-center">
+                                                    <!--begin::Icon-->
+                                                    <div class="stepper-icon w-40px h-40px">
+                                                        <i class="stepper-check fas fa-check"></i>
+                                                        <span class="stepper-number">4</span>
+                                                    </div>
+                                                    <!--begin::Icon-->
+
+                                                    <!--begin::Label-->
+                                                    <div class="stepper-label">
+                                                        <h3 class="stepper-title">
+                                                            Dados aluno
+                                                        </h3>
+
+                                                        <!-- <div class="stepper-desc">
+                                                            Description
+                                                        </div> -->
+                                                    </div>
+                                                    <!--end::Label-->
+                                                </div>
+                                                <!--end::Wrapper-->
+                                            </div>
+                                            <!--end::Step 4-->
+                                        </div>
+                                        <!--end::Nav-->
+                                    </div>
+
+                                    <!--begin::Content-->
+                                    <div class="flex-row-fluid">
+                                        <!--begin::Form-->
+                                        <form class="form mx-auto" novalidate="novalidate">
+                                            <!--w-lg-500px-->
+                                            <!--begin::Group-->
+                                            <div class="mb-5">
+                                                <!--begin::Step 1-->
+                                                <div class="flex-column current" data-kt-stepper-element="content">
+                                                    <!--begin::Input group-->
+                                                    <div class="form-floating fv-row mb-7 ">
+
+                                                        <select id="floatingSelectPE"
+                                                            class="form-select form-select-solid"
+                                                            name="periodo_estagios"
+                                                            aria-label="Selecionar periodo de estagio">
+                                                            <option selected>Escolha o periodo de estagio</option>
+                                                            <option value="1">MEI 2022/23</option>
+                                                            <option value="2">MSI 2022/23</option>
+                                                            <option value="3">MSE 2022/23</option>
+                                                        </select>
+                                                        <label for="floatingSelectPE" class="form-label">Periodo de
+                                                            Estágio&nbsp;<span class="required"></span></label>
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+
+
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+
+                                                    <div class="container mb-7 p-0">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row ">
+
+                                                                    <select class="form-select form-select-solid"
+                                                                        id="floatingSelectAE" name="ae"
+                                                                        aria-label="Selecionar Area Especialidade">
+                                                                        <option selected>Selecionar Area Especialidade
+                                                                        </option>
+                                                                        <option value="1">ES</option>
+                                                                        <option value="2">Sis Int.</option>
+                                                                        <option value="3">Sis inf.</option>
+                                                                        <option value="3">CSI</option>
+                                                                    </select>
+                                                                    <label for="floatingSelectAE"
+                                                                        class="form-label">Area de
+                                                                        Especialidade&nbsp;<span
+                                                                            class="required"></span></label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row ">
+
+                                                                    <select class="form-select form-select-solid"
+                                                                        id="floatingSelectAE2" name="ae2" value=""
+                                                                        placeholder=""
+                                                                        aria-label="Selecionar Area Especialidade secundaria">
+                                                                        <option selected>Selecionar Area Especialidade
+                                                                        </option>>
+                                                                        <option value="1">ES</option>
+                                                                        <option value="2">Sis Int.</option>
+                                                                        <option value="3">Sis inf.</option>
+                                                                        <option value="3">CSI</option>
+                                                                    </select>
+                                                                    <label for="floatingSelectAE2"
+                                                                        class="form-label">Area de Especialidade</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container mb-7 p-0">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-solid"
+                                                                        id="floatingInputCurso" value="MEI" readonly />
+                                                                    <label for="floatingInputCurso"
+                                                                        class="form-label">Curso</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-solid"
+                                                                        id="floatingInputInst" value="Teste" readonly />
+                                                                    <label for="floatingInputInst"
+                                                                        class="form-label">Instituição</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input for="floatingInputTitle" type="text"
+                                                            class="form-control form-control-solid" name="tituloEstagio"
+                                                            placeholder="Titulo" required/>
+                                                        <label id="floatingInputTitle" class="form-label">Titulo do
+                                                            Estagio&nbsp;<span class="required"></span></label>
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+                                                    <div class="form-floating fv-row mb-7">
+
+                                                        <select class="form-select form-select-solid" name="legal_rep"
+                                                            value="" placeholder=""
+                                                            aria-label="Selecionar Representante Legal">
+                                                            <option selected>Selecionar Representante Legal</option>>
+                                                            <option value="1">Joao</option>
+                                                            <option value="2">Maria</option>
+
+                                                        </select>
+                                                        <label class="form-label">Representante Legal&nbsp;<span
+                                                                class="required"></span></label>
+                                                    </div>
+                                                    <div class="form-floating fv-row mb-7">
+
+                                                        <select class="form-select form-select-solid" name="colab"
+                                                            value="" placeholder="" aria-label="Selecionar Contacto Administrativo">
+                                                            <option selected>Selecionar Contacto Administrativo</option>>
+                                                            <option value="1">Joao</option>
+                                                            <option value="2">Maria</option>
+                                                        </select>
+                                                        <label class="form-label">Contacto Administrativo&nbsp;<span
+                                                                class="required"></span></label>
+                                                    </div>
+
+
+                                                    <!--begin::Input group-->
+                                                    <!-- <div class="fv-row mb-10">
+
+                                                        <label class="form-label">Deseja realizar entrevistas?</label>
+                                                        <label
+                                                            class="form-check form-switch form-check-custom form-check-solid">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                checked="checked" value="1" />
+                                                            <span class="form-check-label">
+                                                                Sim
+                                                            </span>
+                                                        </label>
+                                                    </div> -->
+                                                    <div class="form-check form-check-custom form-check-success form-check-solid form-check-lg">
+                                                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Deseja realizar entrevistas?
+                                                        </label>
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                </div>
+                                                <!--begin::Step 1-->
+
+                                                <!--begin::Step 2-->
+                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">Example Label 1</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input1" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">Example Label 2</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <textarea class="form-control form-control-solid" rows="3"
+                                                            name="input2" placeholder=""></textarea>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">Example Label 3</label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <label class="form-check form-check-custom form-check-solid">
+                                                            <input class="form-check-input" checked="checked"
+                                                                type="checkbox" value="1" />
+                                                            <span class="form-check-label">
+                                                                Checkbox
+                                                            </span>
+                                                        </label>
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                </div>
+                                                <!--begin::Step 2-->
+
+                                                <!--begin::Step 3-->
+                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label d-flex align-items-center">
+                                                            <span class="required">Input 1</span>
+                                                            <i class="fas fa-exclamation-circle ms-2 fs-7"
+                                                                data-bs-toggle="tooltip" title="Example tooltip"></i>
+                                                        </label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input1" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">
+                                                            Input 2
+                                                        </label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input2" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                </div>
+                                                <!--begin::Step 3-->
+
+                                                <!--begin::Step 4-->
+                                                <div class="flex-column" data-kt-stepper-element="content">
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label d-flex align-items-center">
+                                                            <span class="required">Input 1</span>
+                                                            <i class="fas fa-exclamation-circle ms-2 fs-7"
+                                                                data-bs-toggle="tooltip" title="Example tooltip"></i>
+                                                        </label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input1" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">
+                                                            Input 2
+                                                        </label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input2" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-10">
+                                                        <!--begin::Label-->
+                                                        <label class="form-label">
+                                                            Input 3
+                                                        </label>
+                                                        <!--end::Label-->
+
+                                                        <!--begin::Input-->
+                                                        <input type="text" class="form-control form-control-solid"
+                                                            name="input3" placeholder="" value="" />
+                                                        <!--end::Input-->
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                </div>
+                                                <!--begin::Step 4-->
+                                            </div>
+                                            <!--end::Group-->
+
+                                            <!--begin::Actions-->
+                                            <div class="d-flex flex-stack">
+                                                <!--begin::Wrapper-->
+                                                <div class="me-2">
+                                                    <button type="button" class="btn btn-light btn-active-light-primary"
+                                                        data-kt-stepper-action="previous">
+                                                        Back
+                                                    </button>
+                                                </div>
+                                                <!--end::Wrapper-->
+
+                                                <!--begin::Wrapper-->
+                                                <div>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-kt-stepper-action="submit">
+                                                        <span class="indicator-label">
+                                                            Submit
+                                                        </span>
+                                                        <span class="indicator-progress">
+                                                            Please wait... <span
+                                                                class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                                                        </span>
+                                                    </button>
+
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-kt-stepper-action="next">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                                <!--end::Wrapper-->
+                                            </div>
+                                            <!--end::Actions-->
+                                        </form>
+                                        <!--end::Form-->
+                                    </div>
+                                </div>
+                                <!--end::Stepper-->
+
+
+                            </div>
+                            <!--end::Modal body-->
+                        </div>
+                        <!--end::Modal content-->
+                    </div>
+                    <!--end::Modal dialog-->
+                </div>
+                <!--end:::Main-->
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Page-->
+    </div>
+    <!--end::App-->
+
+    <!--begin::Javascript-->
+    <script>var hostUrl = "assets/";</script>
+
+    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script src="assets/js/scripts.bundle.js"></script>
+
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Vendors Javascript(used for this page only)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+    <!--end::Vendors Javascript-->
+    <!--begin::Custom Javascript(used for this page only)-->
+    <script src="assets/js/custom/pages/user-profile/general.js"></script>
+    <script src="assets/js/widgets.bundle.js"></script>
+    <script src="assets/js/custom/widgets.js"></script>
+    <script src="assets/js/custom/apps/chat/chat.js"></script>
+    <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-app.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/type.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/details.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/finance.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/complete.js"></script>
+    <script src="assets/js/custom/utilities/modals/offer-a-deal/main.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/type.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/budget.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/settings.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/team.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/targets.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/files.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/complete.js"></script>
+    <script src="assets/js/custom/utilities/modals/create-project/main.js"></script>
+    <script src="assets/js/custom/utilities/modals/users-search.js"></script>
+
+    <script>// Stepper lement
+        // Stepper lement
+        var element = document.querySelector("#kt_stepper_example_clickable");
+
+        // Initialize Stepper
+        var stepper = new KTStepper(element);
+
+        // Handle navigation click
+        stepper.on("kt.stepper.click", function (stepper) {
+            stepper.goTo(stepper.getClickedStepIndex()); // go to clicked step
+        });
+
+        // Handle next step
+        stepper.on("kt.stepper.next", function (stepper) {
+            stepper.goNext(); // go next step
+        });
+
+        // Handle previous step
+        stepper.on("kt.stepper.previous", function (stepper) {
+            stepper.goPrevious(); // go previous step
+        });
+    </script>
+
+
+    <!--end::Custom Javascript-->
+    <!--end::Javascript-->
+</body>
+<!--end::Body-->
+
+</html>
