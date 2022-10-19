@@ -149,11 +149,24 @@ License: For each use you must have a valid license purchased only from above li
                         <!--begin::Modal content-->
                         <div class="modal-content modal-rounded">
                             <!--begin::Modal header-->
-                            <div class="modal-header p-5">
+                            <div class="modal-header row p-5">
                                 <!--begin::Modal title-->
-                                <h2>Criar Proposta</h2>
+                                <h2 class="col">Criar Proposta</h2>
                                 <!--end::Modal title-->
+                                <div class="input-group col" style="max-width: 200px">
+
+                                    <span class="input-group-text flex-right" for="codigoEstagio">Codigo <i
+                                            class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+                                            title="Codigo atribuido a sua proposta. Apenas aparece apos preencher os campos."></i>
+                                    </span>
+                                    <input type="text" id="codigoEstagio" class="form-control flex-right"
+                                        value="000000" aria-label="Codigo da proposta"
+                                        aria-describedby="basic-addon1" readonly>
+
+                                </div>
+
                             </div>
+
                             <!--end::Modal header-->
                             <!--begin::Modal body-->
                             <div class="modal-body m-5">
@@ -187,6 +200,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             Description
                                                         </div> -->
                                                     </div>
+
                                                     <!--end::Label-->
                                                 </div>
                                                 <!--end::Wrapper-->
@@ -391,7 +405,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="form-floating fv-row mb-7">
                                                         <input for="floatingInputTitle" type="text"
                                                             class="form-control form-control-solid" name="tituloEstagio"
-                                                            placeholder="Titulo" required/>
+                                                            placeholder="Titulo" required />
                                                         <label id="floatingInputTitle" class="form-label">Titulo do
                                                             Estagio&nbsp;<span class="required"></span></label>
                                                     </div>
@@ -413,8 +427,10 @@ License: For each use you must have a valid license purchased only from above li
                                                     <div class="form-floating fv-row mb-7">
 
                                                         <select class="form-select form-select-solid" name="colab"
-                                                            value="" placeholder="" aria-label="Selecionar Contacto Administrativo">
-                                                            <option selected>Selecionar Contacto Administrativo</option>>
+                                                            value="" placeholder=""
+                                                            aria-label="Selecionar Contacto Administrativo">
+                                                            <option selected>Selecionar Contacto Administrativo</option>
+                                                            >
                                                             <option value="1">Joao</option>
                                                             <option value="2">Maria</option>
                                                         </select>
@@ -424,20 +440,10 @@ License: For each use you must have a valid license purchased only from above li
 
 
                                                     <!--begin::Input group-->
-                                                    <!-- <div class="fv-row mb-10">
-
-                                                        <label class="form-label">Deseja realizar entrevistas?</label>
-                                                        <label
-                                                            class="form-check form-switch form-check-custom form-check-solid">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                checked="checked" value="1" />
-                                                            <span class="form-check-label">
-                                                                Sim
-                                                            </span>
-                                                        </label>
-                                                    </div> -->
-                                                    <div class="form-check form-check-custom form-check-success form-check-solid form-check-lg">
-                                                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"/>
+                                                    <div
+                                                        class="form-check form-check-custom form-check-success form-check-solid form-check-lg">
+                                                        <input class="form-check-input" type="checkbox" value="1"
+                                                            id="flexCheckDefault" />
                                                         <label class="form-check-label" for="flexCheckDefault">
                                                             Deseja realizar entrevistas?
                                                         </label>
@@ -448,21 +454,35 @@ License: For each use you must have a valid license purchased only from above li
 
                                                 <!--begin::Step 2-->
                                                 <div class="flex-column" data-kt-stepper-element="content">
-                                                    <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">Example Label 1</label>
-                                                        <!--end::Label-->
 
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            name="input1" placeholder="" value="" />
-                                                        <!--end::Input-->
+                                                    <div class="container mb-7 p-0">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-solid"
+                                                                        id="floatingInputNomeEntidade" placeholder=" "/>
+                                                                    <label for="floatingInputNomeEntidade"
+                                                                        class="form-label">Nome da entidade acolhedora</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row">
+                                                                    <input type="text"
+                                                                        class="form-control form-control-solid"
+                                                                        id="floatingInputLocal" placeholder=" `" />
+                                                                    <label for="floatingInputLocal"
+                                                                        class="form-label">Local</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <!--end::Input group-->
-
+                                                    <div class="form-floating">
+                                                        <textarea class="form-control form-control-solid mb-10" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                                        <label for="floatingTextarea2">Enquandramento</label>
+                                                    </div>
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
+                                                    <div class="fv-row mb-7">
                                                         <!--begin::Label-->
                                                         <label class="form-label">Example Label 2</label>
                                                         <!--end::Label-->
@@ -691,6 +711,8 @@ License: For each use you must have a valid license purchased only from above li
         stepper.on("kt.stepper.previous", function (stepper) {
             stepper.goPrevious(); // go previous step
         });
+
+        stepper.goTo(2);
     </script>
 
 
