@@ -381,7 +381,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                         placeholder=""
                                                                         aria-label="Selecionar Area Especialidade secundaria">
                                                                         <option selected>Selecionar Area Especialidade
-                                                                        </option>>
+                                                                        </option>
                                                                         <option value="1">ES</option>
                                                                         <option value="2">Sis Int.</option>
                                                                         <option value="3">Sis inf.</option>
@@ -576,11 +576,11 @@ License: For each use you must have a valid license purchased only from above li
                                                             data-select2-id="kt_select2_1" tabindex="-1"
                                                             aria-hidden="true">
                                                             <option label="Label" data-select2-id="1"></option>
-                                                            <option value="Joao" data-select2-id="2">Joao Miguel Alves
+                                                            <option value="1" data-select2-id="2">Joao Miguel Alves
                                                             </option>
-                                                            <option value="Maria" data-select2-id="3">Maria Ana Barbosa
+                                                            <option value="2" data-select2-id="3">Maria Ana Barbosa
                                                             </option>
-                                                            <option value="Joaquim" data-select2-id="4">Joaquim Andre
+                                                            <option value="3" data-select2-id="4">Joaquim Andre
                                                                 Silva</option>
                                                         </select>
                                                     </div>
@@ -592,7 +592,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                 class="form-select form-select-solid form-control-sm"
                                                                 name="orientadorTitle" id="orientadorTitle" value=""
                                                                 placeholder=" " aria-label="Titulo">
-                                                                <option selected>Titulo
+                                                                <option value="" selected>Titulo
                                                                 </option>
 
                                                                 <option value="1">Dr.</option>
@@ -637,16 +637,16 @@ License: For each use you must have a valid license purchased only from above li
                                                                 <div class="form-floating fv-row ">
 
                                                                     <select class="form-select form-select-solid"
-                                                                        id="floatingSelectAE" name="ae"
+                                                                        id="floatingSelectGrauAcademico" name="grau"
                                                                         aria-label="Selecionar Area Especialidade">
-                                                                        <option selected>Grau academico do orientador
+                                                                        <option value="" selected>Grau academico do orientador
                                                                         </option>
                                                                         <option value="1">Licenciatura pré-bolonha
                                                                         </option>
                                                                         <option value="2">Mestrado</option>
                                                                         <option value="3">Doutoramento</option>
                                                                     </select>
-                                                                    <label for="floatingSelectAE"
+                                                                    <label for="floatingSelectGrauAcademico"
                                                                         class="form-label required">Grau
                                                                         academico do orientador</label>
                                                                 </div>
@@ -657,7 +657,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                     <input
                                                                         class="form-control form-control-solid date-own"
                                                                         type="number" min="1940" max="2022" step="1"
-                                                                        value="2000" placeholder=" " />
+                                                                        value="2000" placeholder=" " id="inputAnoConclusao"/>
                                                                     <label for="floatingSelectAE2 required"
                                                                         class="form-label">Ano de
                                                                         conclusao</label>
@@ -835,15 +835,62 @@ License: For each use you must have a valid license purchased only from above li
     <script>
 
         $(document).ready(function () {
-
-
-            $('#kt_select2_1, #kt_select2_1_validate').select2({
+            var orientadorTitle = $('#orientadorTitle');
+                var floatingInputNomeOrientador = $('#floatingInputNomeOrientador');
+                var inputEmailOrientador = $('#inputEmailOrientador');
+                var inputPhoneNumberOrientador = $('#inputPhoneNumberOrientador');
+                var floatingSelectGrauAcademico = $('#floatingSelectGrauAcademico');
+                var inputAnoConclusao = $('#inputAnoConclusao');
+                var inputAreaDeFormacao = $('#inputAreaDeFormacao');
+                var inputFuncaoNaEmpresa = $('#inputFuncaoNaEmpresa');
+                var TextareaExperienciaProfss = $('#TextareaExperienciaProfss');
+            var select2 = $('#kt_select2_1, #kt_select2_1_validate')
+            select2.select2({
                 placeholder: 'Selecione um orientador',
                 allowClear: true,
-                minimumResultsForSearch: 4,
+                minimumResultsForSearch: -1,
                 width: '100%'
             });
+            
 
+            select2.on('select2:select', function(e) {
+                console.log(e.params.data);
+                var data = e.params.data;
+
+                if(data.id == 1){
+                    orientadorTitle.val(2)
+                    floatingInputNomeOrientador.val("Joao Miguel Alves");
+                    inputEmailOrientador.val("joaoAlves@empresa.com");
+                    inputPhoneNumberOrientador.val("+351919999999");
+                    floatingSelectGrauAcademico.val(2);
+                    inputAnoConclusao.val(1987);
+                    inputAreaDeFormacao.val("Informatica");
+                    inputFuncaoNaEmpresa.val("CTO");
+                    TextareaExperienciaProfss.val("Lorem Ipsum");
+                } else {
+                    orientadorTitle.val(1)
+                    floatingInputNomeOrientador.val("");
+                    inputEmailOrientador.val("");
+                    inputPhoneNumberOrientador.val("");
+                    floatingSelectGrauAcademico.val(1);
+                    inputAnoConclusao.val("");
+                    inputAreaDeFormacao.val("");
+                    inputFuncaoNaEmpresa.val("");
+                    TextareaExperienciaProfss.val("");
+
+                }
+            });
+            select2.on('select2:unselecting',function (e) {
+                orientadorTitle.val("")
+                floatingInputNomeOrientador.val("");
+                inputEmailOrientador.val("");
+                inputPhoneNumberOrientador.val("");
+                floatingSelectGrauAcademico.val("");
+                inputAnoConclusao.val("");
+                inputAreaDeFormacao.val("");
+                inputFuncaoNaEmpresa.val("");
+                TextareaExperienciaProfss.val("");
+            });
             $(".email_mask_dei").inputmask({
                 mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@student.dei.uc.pt",
                 greedy: false,
