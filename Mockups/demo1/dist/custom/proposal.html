@@ -41,6 +41,18 @@ License: For each use you must have a valid license purchased only from above li
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 
     <!--end::Global Stylesheets Bundle-->
+    <style>
+        .container.container-no-sides {
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .container.container-full-width {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -159,9 +171,8 @@ License: For each use you must have a valid license purchased only from above li
                                             class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
                                             title="Codigo atribuido a sua proposta. Apenas aparece apos preencher os campos."></i>
                                     </span>
-                                    <input type="text" id="codigoEstagio" class="form-control flex-right"
-                                        value="000000" aria-label="Codigo da proposta"
-                                        aria-describedby="basic-addon1" readonly>
+                                    <input type="text" id="codigoEstagio" class="form-control flex-right" value="000000"
+                                        aria-label="Codigo da proposta" aria-describedby="basic-addon1" readonly>
 
                                 </div>
 
@@ -337,7 +348,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
 
-                                                    <div class="container mb-7 p-0">
+                                                    <div class="container-fluid container-no-sides mb-7 p-0">
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div class="form-floating fv-row ">
@@ -378,7 +389,7 @@ License: For each use you must have a valid license purchased only from above li
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="container mb-7 p-0">
+                                                    <div class="container-fluid container-no-sides mb-7 p-0">
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div class="form-floating fv-row">
@@ -455,67 +466,118 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--begin::Step 2-->
                                                 <div class="flex-column" data-kt-stepper-element="content">
 
-                                                    <div class="container mb-7 p-0">
+                                                    <div class="container-fluid container-no-sides mb-7 p-0">
                                                         <div class="row">
                                                             <div class="col">
                                                                 <div class="form-floating fv-row">
                                                                     <input type="text"
                                                                         class="form-control form-control-solid"
-                                                                        id="floatingInputNomeEntidade" placeholder=" "/>
+                                                                        id="floatingInputNomeEntidade"
+                                                                        placeholder=" " />
                                                                     <label for="floatingInputNomeEntidade"
-                                                                        class="form-label">Nome da entidade acolhedora</label>
+                                                                        class="form-label">Nome da entidade
+                                                                        acolhedora</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col">
                                                                 <div class="form-floating fv-row">
                                                                     <input type="text"
                                                                         class="form-control form-control-solid"
-                                                                        id="floatingInputLocal" placeholder=" `" />
+                                                                        id="floatingInputLocal" placeholder="" />
                                                                     <label for="floatingInputLocal"
                                                                         class="form-label">Local</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-floating">
-                                                        <textarea class="form-control form-control-solid mb-10" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                                                        <label for="floatingTextarea2">Enquandramento</label>
+                                                    <div class="form">
+                                                        <label class="form-label"
+                                                            for="TextareaEnquandramento">Enquandramento</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaEnquandramento" name="TextareaEnquandramento"
+                                                            style="height: 100px"></textarea>
+
                                                     </div>
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">Example Label 2</label>
-                                                        <!--end::Label-->
+                                                        <label class="form-label"
+                                                            for="TextareaObjetivos">Objetivos</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaObjetivos" name="TextareaObjetivos"
+                                                            style="height: 100px"></textarea>
 
-                                                        <!--begin::Input-->
-                                                        <textarea class="form-control form-control-solid" rows="3"
-                                                            name="input2" placeholder=""></textarea>
-                                                        <!--end::Input-->
                                                     </div>
                                                     <!--end::Input group-->
 
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">Example Label 3</label>
-                                                        <!--end::Label-->
+                                                    <div class="fv-row mb-7">
+                                                        <label class="form-label" for="TextareaPlano1Semestre">Plano de
+                                                            trabalho (1º semestre)</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaPlano1Semestre" name="TextareaPlano1Semestre"
+                                                            style="height: 100px"></textarea>
 
-                                                        <!--begin::Input-->
-                                                        <label class="form-check form-check-custom form-check-solid">
-                                                            <input class="form-check-input" checked="checked"
-                                                                type="checkbox" value="1" />
-                                                            <span class="form-check-label">
-                                                                Checkbox
-                                                            </span>
-                                                        </label>
-                                                        <!--end::Input-->
                                                     </div>
                                                     <!--end::Input group-->
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-7">
+                                                        <label class="form-label" for="TextareaPlano2Semestre">Plano de
+                                                            trabalho (2º semestre)</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaPlano2Semestre" name="TextareaPlano2Semestre"
+                                                            style="height: 100px"></textarea>
+
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-7">
+                                                        <label class="form-label"
+                                                            for="TextareaCondicoes">Condições</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaCondicoes" name="TextareaCondicoes"
+                                                            style="height: 100px"></textarea>
+
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-7">
+                                                        <label class="form-label"
+                                                            for="TextareaElementosAdicionais">Observações e elementos
+                                                            adicionais</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaElementosAdicionais"
+                                                            name="TextareaElementosAdicionais"
+                                                            style="height: 100px"></textarea>
+
+                                                    </div>
+                                                    <!--end::Input group-->
+
                                                 </div>
-                                                <!--begin::Step 2-->
+                                                <!--end::Step 2-->
 
                                                 <!--begin::Step 3-->
                                                 <div class="flex-column" data-kt-stepper-element="content">
+
+                                                    <!--begin::Input group-->
+                                                    <div class="fv-row mb-7" data-select2-id="39">
+                                                        <label class="form-label d-flex align-items-center">Basic
+                                                            Example</label>
+                                                        <select class="form-control select2-hidden-accessible"
+                                                            id="kt_select2_1" name="param"
+                                                            data-select2-id="kt_select2_1" tabindex="-1"
+                                                            aria-hidden="true">
+                                                            <option label="Label" data-select2-id="1"></option>
+                                                            <option value="Joao" data-select2-id="2">Joao Miguel Alves
+                                                            </option>
+                                                            <option value="Maria" data-select2-id="3">Maria Ana Barbosa
+                                                            </option>
+                                                            <option value="Joaquim" data-select2-id="4">Joaquim Andre
+                                                                Silva</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--end::Input group-->
+
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-10">
                                                         <!--begin::Label-->
@@ -690,7 +752,17 @@ License: For each use you must have a valid license purchased only from above li
     <script src="assets/js/custom/utilities/modals/create-project/main.js"></script>
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
 
-    <script>// Stepper lement
+    <script>
+
+        $(document).ready(function () {
+            $('#kt_select2_1, #kt_select2_1_validate').select2({
+                placeholder: 'Selecione um orientador',
+                allowClear: true,
+                minimumResultsForSearch: 4,
+                width: '100%'
+            });
+        });
+        // Stepper lement
         // Stepper lement
         var element = document.querySelector("#kt_stepper_example_clickable");
 
@@ -712,7 +784,7 @@ License: For each use you must have a valid license purchased only from above li
             stepper.goPrevious(); // go previous step
         });
 
-        stepper.goTo(2);
+        stepper.goTo(3);
     </script>
 
 
