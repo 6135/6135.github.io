@@ -52,6 +52,10 @@ License: For each use you must have a valid license purchased only from above li
         .container.container-full-width {
             max-width: 100%;
         }
+
+        .ui-datepicker-calendar {
+            display: none;
+        }
     </style>
 </head>
 <!--end::Head-->
@@ -301,7 +305,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--begin::Label-->
                                                     <div class="stepper-label">
                                                         <h3 class="stepper-title">
-                                                            Dados aluno
+                                                            Dados aluno (Opcional)
                                                         </h3>
 
                                                         <!-- <div class="stepper-desc">
@@ -338,8 +342,9 @@ License: For each use you must have a valid license purchased only from above li
                                                             <option value="2">MSI 2022/23</option>
                                                             <option value="3">MSE 2022/23</option>
                                                         </select>
-                                                        <label for="floatingSelectPE" class="form-label">Periodo de
-                                                            Estágio&nbsp;<span class="required"></span></label>
+                                                        <label for="floatingSelectPE"
+                                                            class="form-label required">Periodo de
+                                                            Estágio</span></label>
                                                     </div>
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
@@ -364,9 +369,8 @@ License: For each use you must have a valid license purchased only from above li
                                                                         <option value="3">CSI</option>
                                                                     </select>
                                                                     <label for="floatingSelectAE"
-                                                                        class="form-label">Area de
-                                                                        Especialidade&nbsp;<span
-                                                                            class="required"></span></label>
+                                                                        class="form-label required">Area de
+                                                                        Especialidade</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col">
@@ -417,8 +421,9 @@ License: For each use you must have a valid license purchased only from above li
                                                         <input for="floatingInputTitle" type="text"
                                                             class="form-control form-control-solid" name="tituloEstagio"
                                                             placeholder="Titulo" required />
-                                                        <label id="floatingInputTitle" class="form-label">Titulo do
-                                                            Estagio&nbsp;<span class="required"></span></label>
+                                                        <label id="floatingInputTitle"
+                                                            class="form-label required">Titulo do
+                                                            Estagio</span></label>
                                                     </div>
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
@@ -432,8 +437,8 @@ License: For each use you must have a valid license purchased only from above li
                                                             <option value="2">Maria</option>
 
                                                         </select>
-                                                        <label class="form-label">Representante Legal&nbsp;<span
-                                                                class="required"></span></label>
+                                                        <label class="form-label  required">Representante
+                                                            Legal</span></label>
                                                     </div>
                                                     <div class="form-floating fv-row mb-7">
 
@@ -445,8 +450,8 @@ License: For each use you must have a valid license purchased only from above li
                                                             <option value="1">Joao</option>
                                                             <option value="2">Maria</option>
                                                         </select>
-                                                        <label class="form-label">Contacto Administrativo&nbsp;<span
-                                                                class="required"></span></label>
+                                                        <label class="form-label required">Contacto
+                                                            Administrativo</label>
                                                     </div>
 
 
@@ -455,7 +460,7 @@ License: For each use you must have a valid license purchased only from above li
                                                         class="form-check form-check-custom form-check-success form-check-solid form-check-lg">
                                                         <input class="form-check-input" type="checkbox" value="1"
                                                             id="flexCheckDefault" />
-                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                        <label class="form-check-label required" for="flexCheckDefault">
                                                             Deseja realizar entrevistas?
                                                         </label>
                                                     </div>
@@ -475,7 +480,7 @@ License: For each use you must have a valid license purchased only from above li
                                                                         id="floatingInputNomeEntidade"
                                                                         placeholder=" " />
                                                                     <label for="floatingInputNomeEntidade"
-                                                                        class="form-label">Nome da entidade
+                                                                        class="form-label required">Nome da entidade
                                                                         acolhedora</label>
                                                                 </div>
                                                             </div>
@@ -483,15 +488,15 @@ License: For each use you must have a valid license purchased only from above li
                                                                 <div class="form-floating fv-row">
                                                                     <input type="text"
                                                                         class="form-control form-control-solid"
-                                                                        id="floatingInputLocal" placeholder="" />
+                                                                        id="floatingInputLocal" placeholder=" " />
                                                                     <label for="floatingInputLocal"
-                                                                        class="form-label">Local</label>
+                                                                        class="form-label  required">Local</label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form">
-                                                        <label class="form-label"
+                                                        <label class="form-label  required"
                                                             for="TextareaEnquandramento">Enquandramento</label>
                                                         <textarea class="form-control form-control-solid mb-10"
                                                             id="TextareaEnquandramento" name="TextareaEnquandramento"
@@ -500,7 +505,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     </div>
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <label class="form-label"
+                                                        <label class="form-label required"
                                                             for="TextareaObjetivos">Objetivos</label>
                                                         <textarea class="form-control form-control-solid mb-10"
                                                             id="TextareaObjetivos" name="TextareaObjetivos"
@@ -511,7 +516,8 @@ License: For each use you must have a valid license purchased only from above li
 
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <label class="form-label" for="TextareaPlano1Semestre">Plano de
+                                                        <label class="form-label required"
+                                                            for="TextareaPlano1Semestre">Plano de
                                                             trabalho (1º semestre)</label>
                                                         <textarea class="form-control form-control-solid mb-10"
                                                             id="TextareaPlano1Semestre" name="TextareaPlano1Semestre"
@@ -522,7 +528,8 @@ License: For each use you must have a valid license purchased only from above li
 
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <label class="form-label" for="TextareaPlano2Semestre">Plano de
+                                                        <label class="form-label required"
+                                                            for="TextareaPlano2Semestre">Plano de
                                                             trabalho (2º semestre)</label>
                                                         <textarea class="form-control form-control-solid mb-10"
                                                             id="TextareaPlano2Semestre" name="TextareaPlano2Semestre"
@@ -532,7 +539,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <label class="form-label"
+                                                        <label class="form-label required"
                                                             for="TextareaCondicoes">Condições</label>
                                                         <textarea class="form-control form-control-solid mb-10"
                                                             id="TextareaCondicoes" name="TextareaCondicoes"
@@ -542,7 +549,7 @@ License: For each use you must have a valid license purchased only from above li
                                                     <!--end::Input group-->
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7">
-                                                        <label class="form-label"
+                                                        <label class="form-label required"
                                                             for="TextareaElementosAdicionais">Observações e elementos
                                                             adicionais</label>
                                                         <textarea class="form-control form-control-solid mb-10"
@@ -561,8 +568,8 @@ License: For each use you must have a valid license purchased only from above li
 
                                                     <!--begin::Input group-->
                                                     <div class="fv-row mb-7" data-select2-id="39">
-                                                        <label class="form-label d-flex align-items-center">Basic
-                                                            Example</label>
+                                                        <label class="form-label d-flex align-items-center ">Selecione um
+                                                            orientador</label>
                                                         <select class="form-control select2-hidden-accessible"
                                                             id="kt_select2_1" name="param"
                                                             data-select2-id="kt_select2_1" tabindex="-1"
@@ -577,36 +584,118 @@ License: For each use you must have a valid license purchased only from above li
                                                         </select>
                                                     </div>
                                                     <!--end::Input group-->
+                                                    <!--begin::Input group-->
+                                                    <div class="form-group input-group mb-7">
+                                                        <div class="form-floating " style="max-width: 100px;">
+                                                            <select
+                                                                class="form-select form-select-solid form-control-sm"
+                                                                name="orientadorTitle" id="orientadorTitle" value=""
+                                                                placeholder=" " aria-label="Titulo">
+                                                                <option selected>Titulo
+                                                                </option>
+
+                                                                <option value="1">Dr.</option>
+                                                                <option value="2">Eng.</option>
+                                                            </select>
+                                                            <label class="form-label  required">Titulo</label>
+                                                        </div>
+                                                        <div class="form-floating fv-row">
+                                                            <input type="text" class="form-control"
+                                                                id="floatingInputNomeOrientador" placeholder=" " />
+                                                            <label for="floatingInputNomeOrientador "
+                                                                class="form-label  required">Nome
+                                                                do orientador</label>
+                                                        </div>
+                                                    </div>
+                                                    <!--end::Input group-->
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input id="inputEmailOrientador" type="text"
+                                                            class="form-control form-control-solid email_mask"
+                                                            name="inputEmailOrientador" placeholder=" " required />
+                                                        <label id="inputEmailOrientador" class="form-label  required">Email do
+                                                            orientador</span></label>
+                                                    </div>
+
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input id="inputPhoneNumberOrientador" type="tel"
+                                                            class="form-control form-control-solid phone_mask"
+                                                            name="inputPhoneNumberOrientador" placeholder=" "
+                                                            pattern="[9]{1}[0-9]{8}" required />
+                                                        <label id="inputPhoneNumberOrientador "
+                                                            class="form-label required">Telefone
+                                                            do orientador</span></label>
+                                                    </div>
+
+
+
+                                                    <!-- beging::Input group-->
+                                                    <div class="container-fluid container-no-sides mb-7 p-0">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row ">
+
+                                                                    <select class="form-select form-select-solid"
+                                                                        id="floatingSelectAE" name="ae"
+                                                                        aria-label="Selecionar Area Especialidade">
+                                                                        <option selected>Grau academico do orientador
+                                                                        </option>
+                                                                        <option value="1">Licenciatura pré-bolonha
+                                                                        </option>
+                                                                        <option value="2">Mestrado</option>
+                                                                        <option value="3">Doutoramento</option>
+                                                                    </select>
+                                                                    <label for="floatingSelectAE"
+                                                                        class="form-label required">Grau
+                                                                        academico do orientador</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-floating fv-row ">
+
+                                                                    <input
+                                                                        class="form-control form-control-solid date-own"
+                                                                        type="number" min="1940" max="2022" step="1"
+                                                                        value="2000" placeholder=" " />
+                                                                    <label for="floatingSelectAE2 required"
+                                                                        class="form-label">Ano de
+                                                                        conclusao</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end::Input group-->
+
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input id="inputAreaDeFormacao" type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="inputAreaDeFormacao" placeholder=" " required />
+                                                        <label id="inputAreaDeFormacao" class="form-label required">Area
+                                                            do
+                                                            grau</label>
+                                                    </div>
 
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label d-flex align-items-center">
-                                                            <span class="required">Input 1</span>
-                                                            <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                                data-bs-toggle="tooltip" title="Example tooltip"></i>
-                                                        </label>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            name="input1" placeholder="" value="" />
-                                                        <!--end::Input-->
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input id="inputFuncaoNaEmpresa" type="text"
+                                                            class="form-control form-control-solid"
+                                                            name="inputFuncaoNaEmpresa" placeholder=" " required />
+                                                        <label id="inputFuncaoNaEmpresa"
+                                                            class="form-label required">Funcao na
+                                                            empresa</label>
                                                     </div>
                                                     <!--end::Input group-->
 
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">
-                                                            Input 2
-                                                        </label>
-                                                        <!--end::Label-->
+                                                    <div class="fv-row mb-7">
+                                                        <label class="form-label required"
+                                                            for="TextareaExperienciaProfss">Plano
+                                                            de
+                                                            trabalho (2º semestre)</label>
+                                                        <textarea class="form-control form-control-solid mb-10"
+                                                            id="TextareaExperienciaProfss"
+                                                            name="TextareaExperienciaProfss"
+                                                            style="height: 100px"></textarea>
 
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            name="input2" placeholder="" value="" />
-                                                        <!--end::Input-->
                                                     </div>
                                                     <!--end::Input group-->
                                                 </div>
@@ -615,49 +704,24 @@ License: For each use you must have a valid license purchased only from above li
                                                 <!--begin::Step 4-->
                                                 <div class="flex-column" data-kt-stepper-element="content">
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
+                                                    <div class="fv-row form-floating mb-10">
                                                         <!--begin::Label-->
-                                                        <label class="form-label d-flex align-items-center">
-                                                            <span class="required">Input 1</span>
-                                                            <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                                data-bs-toggle="tooltip" title="Example tooltip"></i>
-                                                        </label>
-                                                        <!--end::Label-->
 
-                                                        <!--begin::Input-->
+
                                                         <input type="text" class="form-control form-control-solid"
-                                                            name="input1" placeholder="" value="" />
+                                                            name="InputNomeAluno" id="InputNomeAluno" placeholder=" "
+                                                            required />
+                                                        <label id="inputEmailAluno" class="form-label  required">Nome</label>
                                                         <!--end::Input-->
                                                     </div>
                                                     <!--end::Input group-->
 
                                                     <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">
-                                                            Input 2
-                                                        </label>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            name="input2" placeholder="" value="" />
-                                                        <!--end::Input-->
-                                                    </div>
-                                                    <!--end::Input group-->
-
-                                                    <!--begin::Input group-->
-                                                    <div class="fv-row mb-10">
-                                                        <!--begin::Label-->
-                                                        <label class="form-label">
-                                                            Input 3
-                                                        </label>
-                                                        <!--end::Label-->
-
-                                                        <!--begin::Input-->
-                                                        <input type="text" class="form-control form-control-solid"
-                                                            name="input3" placeholder="" value="" />
-                                                        <!--end::Input-->
+                                                    <div class="form-floating fv-row mb-7">
+                                                        <input id="inputEmailAluno" type="text"
+                                                            class="form-control form-control-solid email_mask_dei"
+                                                            name="inputEmailAluno" placeholder=" " required />
+                                                        <label id="inputEmailAluno" class="form-label  required">Email</label>
                                                     </div>
                                                     <!--end::Input group-->
                                                 </div>
@@ -723,8 +787,10 @@ License: For each use you must have a valid license purchased only from above li
     <script>var hostUrl = "assets/";</script>
 
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
+
     <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script src="assets/js/scripts.bundle.js"></script>
+
 
     <!--end::Global Javascript Bundle-->
     <!--begin::Vendors Javascript(used for this page only)-->
@@ -751,16 +817,55 @@ License: For each use you must have a valid license purchased only from above li
     <script src="assets/js/custom/utilities/modals/create-project/complete.js"></script>
     <script src="assets/js/custom/utilities/modals/create-project/main.js"></script>
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
-
+    <script src="assets/plugins/custom/jinputmask/jquery.inputmask.js"></script>
+    <script src="assets/plugins/custom/jui/jquery-ui.js"></script>
     <script>
 
         $(document).ready(function () {
+
+
             $('#kt_select2_1, #kt_select2_1_validate').select2({
                 placeholder: 'Selecione um orientador',
                 allowClear: true,
                 minimumResultsForSearch: 4,
                 width: '100%'
             });
+
+            $(".email_mask_dei").inputmask({
+                mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@student.dei.uc.pt",
+                greedy: false,
+                onBeforePaste: function (pastedValue, opts) {
+                    pastedValue = pastedValue.toLowerCase();
+                    return pastedValue.replace("mailto:", "");
+                },
+                definitions: {
+                    '*': {
+                        validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                        cardinality: 1,
+                        casing: "lower"
+                    }
+                }
+            });
+
+            $(".email_mask").inputmask({
+                mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+                greedy: false,
+                onBeforePaste: function (pastedValue, opts) {
+                    pastedValue = pastedValue.toLowerCase();
+                    return pastedValue.replace("mailto:", "");
+                },
+                definitions: {
+                    '*': {
+                        validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+                        cardinality: 1,
+                        casing: "lower"
+                    }
+                }
+            });
+            $(".phone_mask").inputmask("mask", {
+                "mask": "999 999 999"
+            });
+
         });
         // Stepper lement
         // Stepper lement
