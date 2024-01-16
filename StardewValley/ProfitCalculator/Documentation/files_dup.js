@@ -5,11 +5,11 @@ var files_dup =
     [ "menus", "dir_0854f828d0da71af3e60a7efd70b1bfc.html", "dir_0854f828d0da71af3e60a7efd70b1bfc" ],
     [ "obj", "dir_43724e81dd40e09f32417973865cdd64.html", "dir_43724e81dd40e09f32417973865cdd64" ],
     [ "ui", "dir_1788f8309b1a812dcb800a185471cf6c.html", "dir_1788f8309b1a812dcb800a185471cf6c" ],
-    [ "GlobalSuppressions.cs", "_global_suppressions_8cs.html", null ],
-    [ "IApi.cs", "_i_api_8cs.html", "_i_api_8cs" ],
-    [ "IDynamicGameAssetsApi.cs", "_i_dynamic_game_assets_api_8cs.html", "_i_dynamic_game_assets_api_8cs" ],
-    [ "IGenericModConfigMenu.cs", "_i_generic_mod_config_menu_8cs.html", "_i_generic_mod_config_menu_8cs" ],
-    [ "ModConfig.cs", "_mod_config_8cs.html", "_mod_config_8cs" ],
-    [ "ModEntry.cs", "_mod_entry_8cs.html", null ],
-    [ "Utils.cs", "_utils_8cs.html", "_utils_8cs" ]
+    [ "GlobalSuppressions.cs", "a00005.html", null ],
+    [ "IApi.cs", "a00008.html", "a00008" ],
+    [ "IDynamicGameAssetsApi.cs", "a00011.html", "a00011" ],
+    [ "IGenericModConfigMenu.cs", "a00014.html", "a00014" ],
+    [ "ModConfig.cs", "a00041.html", "a00041" ],
+    [ "ModEntry.cs", "a00044.html", null ],
+    [ "Utils.cs", "a00074.html", "a00074" ]
 ];

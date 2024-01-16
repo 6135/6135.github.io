@@ -1,7 +1,7 @@
 var namespaces_dup =
 [
-    [ "DynamicGameAssets", "namespace_dynamic_game_assets.html", "namespace_dynamic_game_assets" ],
-    [ "GenericModConfigMenu", "namespace_generic_mod_config_menu.html", "namespace_generic_mod_config_menu" ],
-    [ "JsonAssets", "namespace_json_assets.html", "namespace_json_assets" ],
-    [ "ProfitCalculator", "namespace_profit_calculator.html", "namespace_profit_calculator" ]
+    [ "DynamicGameAssets", "a00078.html", "a00078" ],
+    [ "GenericModConfigMenu", "a00079.html", "a00079" ],
+    [ "JsonAssets", "a00077.html", "a00077" ],
+    [ "ProfitCalculator", "a00080.html", "a00080" ]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['maxharvestincreaseperfarminglevel_0',['MaxHarvestIncreasePerFarmingLevel',['../class_profit_calculator_1_1main_1_1_crop.html#a4b5bd82969f3de89de8129ff6e0381a4',1,'ProfitCalculator::main::Crop']]],
-  ['maxharvests_1',['MaxHarvests',['../class_profit_calculator_1_1main_1_1_crop.html#a7c3afb29b5d2d6c1696858e5d5c08c36',1,'ProfitCalculator::main::Crop']]],
-  ['minharvests_2',['MinHarvests',['../class_profit_calculator_1_1main_1_1_crop.html#ae36549a5769be0a676fa97370e50ccd1',1,'ProfitCalculator::main::Crop']]]
+  ['id_0',['Id',['../a00124.html#a074489bfd6c27c092be5cdc943c13a40',1,'ProfitCalculator::main::Crop']]],
+  ['isgiantcrop_1',['IsGiantCrop',['../a00124.html#a58368968d73504aa885aee69919e006c',1,'ProfitCalculator::main::Crop']]],
+  ['ispaddycrop_2',['IsPaddyCrop',['../a00124.html#a6e2dcaaa03c8521931ced1f3e7abf6a1',1,'ProfitCalculator::main::Crop']]],
+  ['istrelliscrop_3',['IsTrellisCrop',['../a00124.html#af2baada8263cf11c1d72133d86438a85',1,'ProfitCalculator::main::Crop']]],
+  ['item_4',['Item',['../a00124.html#af834948f753d6d2d04f70889fb6312c8',1,'ProfitCalculator::main::Crop']]]
 ];

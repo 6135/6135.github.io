@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['utils_0',['Utils',['../class_profit_calculator_1_1_utils.html',1,'ProfitCalculator']]]
+  ['uintoption_0',['UIntOption',['../a00180.html',1,'ProfitCalculator::ui']]],
+  ['utils_1',['Utils',['../a00184.html',1,'ProfitCalculator']]]
 ];

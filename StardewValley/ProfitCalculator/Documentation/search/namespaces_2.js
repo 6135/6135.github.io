@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jsonassets_0',['JsonAssets',['../namespace_json_assets.html',1,'']]]
+  ['jsonassets_0',['JsonAssets',['../a00077.html',1,'']]]
 ];

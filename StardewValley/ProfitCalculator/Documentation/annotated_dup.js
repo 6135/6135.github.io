@@ -1,27 +1,28 @@
 var annotated_dup =
 [
-    [ "DynamicGameAssets", "namespace_dynamic_game_assets.html", [
-      [ "IDynamicGameAssetsApi", "interface_dynamic_game_assets_1_1_i_dynamic_game_assets_api.html", "interface_dynamic_game_assets_1_1_i_dynamic_game_assets_api" ]
+    [ "DynamicGameAssets", "a00078.html", [
+      [ "IDynamicGameAssetsApi", "a00112.html", "a00112" ]
     ] ],
-    [ "GenericModConfigMenu", "namespace_generic_mod_config_menu.html", [
-      [ "IGenericModConfigMenuApi", "interface_generic_mod_config_menu_1_1_i_generic_mod_config_menu_api.html", "interface_generic_mod_config_menu_1_1_i_generic_mod_config_menu_api" ]
+    [ "GenericModConfigMenu", "a00079.html", [
+      [ "IGenericModConfigMenuApi", "a00116.html", "a00116" ]
     ] ],
-    [ "JsonAssets", "namespace_json_assets.html", [
-      [ "IApi", "interface_json_assets_1_1_i_api.html", "interface_json_assets_1_1_i_api" ]
+    [ "JsonAssets", "a00077.html", [
+      [ "IApi", "a00108.html", "a00108" ]
     ] ],
-    [ "ProfitCalculator", "namespace_profit_calculator.html", [
-      [ "main", "namespace_profit_calculator_1_1main.html", [
-        [ "Calculator", "class_profit_calculator_1_1main_1_1_calculator.html", "class_profit_calculator_1_1main_1_1_calculator" ],
-        [ "Crop", "class_profit_calculator_1_1main_1_1_crop.html", "class_profit_calculator_1_1main_1_1_crop" ],
-        [ "CropInfo", "class_profit_calculator_1_1main_1_1_crop_info.html", "class_profit_calculator_1_1main_1_1_crop_info" ]
+    [ "ProfitCalculator", "a00080.html", [
+      [ "main", "a00081.html", [
+        [ "Calculator", "a00120.html", "a00120" ],
+        [ "Crop", "a00124.html", "a00124" ],
+        [ "CropInfo", "a00128.html", "a00128" ]
       ] ],
-      [ "menus", "namespace_profit_calculator_1_1menus.html", [
-        [ "ProfitCalculatorMainMenu", "class_profit_calculator_1_1menus_1_1_profit_calculator_main_menu.html", "class_profit_calculator_1_1menus_1_1_profit_calculator_main_menu" ]
+      [ "menus", "a00082.html", [
+        [ "ProfitCalculatorMainMenu", "a00144.html", "a00144" ]
       ] ],
-      [ "ui", "namespace_profit_calculator_1_1ui.html", [
-        [ "BaseOption", "class_profit_calculator_1_1ui_1_1_base_option.html", "class_profit_calculator_1_1ui_1_1_base_option" ]
+      [ "ui", "a00083.html", [
+        [ "BaseOption", "a00160.html", "a00160" ],
+        [ "UIntOption", "a00180.html", "a00180" ]
       ] ],
-      [ "ModConfig", "class_profit_calculator_1_1_mod_config.html", "class_profit_calculator_1_1_mod_config" ],
-      [ "Utils", "class_profit_calculator_1_1_utils.html", "class_profit_calculator_1_1_utils" ]
+      [ "ModConfig", "a00152.html", "a00152" ],
+      [ "Utils", "a00184.html", "a00184" ]
     ] ]
 ];

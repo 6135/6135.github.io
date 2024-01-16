@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['totalfertilizerloss_0',['TotalFertilizerLoss',['../class_profit_calculator_1_1main_1_1_crop_info.html#ab6d8cdd6c304d862f55e93ef3a9f4520',1,'ProfitCalculator::main::CropInfo']]],
-  ['totalharvests_1',['TotalHarvests',['../class_profit_calculator_1_1main_1_1_crop_info.html#a658d44e66b47b5b5ccac5ab30fffa4fc',1,'ProfitCalculator::main::CropInfo']]],
-  ['totalprofit_2',['TotalProfit',['../class_profit_calculator_1_1main_1_1_crop_info.html#a722a8f542f15edd1ac448615183ce532',1,'ProfitCalculator::main::CropInfo']]],
-  ['totalseedloss_3',['TotalSeedLoss',['../class_profit_calculator_1_1main_1_1_crop_info.html#addbc08194e01329d29abfff0b6f019cb',1,'ProfitCalculator::main::CropInfo']]]
+  ['seasons_0',['Seasons',['../a00124.html#a7cfabf2abd1c3fd2b8f2540715cc2a62',1,'ProfitCalculator::main::Crop']]],
+  ['seedlossperday_1',['SeedLossPerDay',['../a00128.html#a0d404902b54ef480cfdbd0656ab794ff',1,'ProfitCalculator::main::CropInfo']]],
+  ['seeds_2',['Seeds',['../a00124.html#a85cbea5967591ebef08a3260d2898968',1,'ProfitCalculator::main::Crop']]],
+  ['sprite_3',['Sprite',['../a00124.html#a9dee8af7d350bf3d3a55fc2aa11bf819',1,'ProfitCalculator::main::Crop']]]
 ];

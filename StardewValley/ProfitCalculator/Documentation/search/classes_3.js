@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modconfig_0',['ModConfig',['../class_profit_calculator_1_1_mod_config.html',1,'ProfitCalculator']]]
+  ['modconfig_0',['ModConfig',['../a00152.html',1,'ProfitCalculator']]]
 ];

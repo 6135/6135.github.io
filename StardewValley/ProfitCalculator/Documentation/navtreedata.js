@@ -25,8 +25,8 @@
 var NAVTREE =
 [
   [ "Stardew Profit Calculator", "index.html", [
-    [ "Add crops to this json if you want to use them and they are not in the default list", "md__c_1_2_users_2guibs_2_documents_2_git_hub_2_mobile_profit_calculator_2assets_2readme.html", null ],
-    [ "ProfitCalculator", "md__c_1_2_users_2guibs_2_documents_2_git_hub_2_mobile_profit_calculator_2_r_e_a_d_m_e.html", null ],
+    [ "Add crops to this json if you want to use them and they are not in the default list", "a00305.html", null ],
+    [ "ProfitCalculator", "a00306.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -55,8 +55,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs.html",
-"class_profit_calculator_1_1menus_1_1_profit_calculator_main_menu.html#a4cec96cf95a3ed544664650e084d487a"
+"a00005.html",
+"a00128.html#a1fb51a69cadf83d88e6eda65791437da"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
