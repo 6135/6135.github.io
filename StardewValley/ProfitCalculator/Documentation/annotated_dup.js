@@ -13,13 +13,19 @@ var annotated_dup =
       [ "main", "a00081.html", [
         [ "Calculator", "a00120.html", "a00120" ],
         [ "Crop", "a00124.html", "a00124" ],
-        [ "CropInfo", "a00128.html", "a00128" ]
+        [ "CropInfo", "a00128.html", "a00128" ],
+        [ "CropParser", "a00132.html", "a00132" ],
+        [ "VanillaCropParser", "a00136.html", "a00136" ]
       ] ],
       [ "menus", "a00082.html", [
         [ "ProfitCalculatorMainMenu", "a00144.html", "a00144" ]
       ] ],
       [ "ui", "a00083.html", [
         [ "BaseOption", "a00160.html", "a00160" ],
+        [ "CheckboxOption", "a00164.html", "a00164" ],
+        [ "CropBox", "a00168.html", "a00168" ],
+        [ "DropdownOption", "a00172.html", "a00172" ],
+        [ "TextOption", "a00176.html", "a00176" ],
         [ "UIntOption", "a00180.html", "a00180" ]
       ] ],
       [ "ModConfig", "a00152.html", "a00152" ],

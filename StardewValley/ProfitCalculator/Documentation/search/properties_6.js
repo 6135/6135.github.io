@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['inputcolor_0',['InputColor',['../a00152.html#a97e0b3c618ef86e382a68563e23823c8',1,'ProfitCalculator::ModConfig']]],
-  ['isprofitcalculatoropen_1',['isProfitCalculatorOpen',['../a00144.html#a371d1649031bb9f49ec178dacc6a1d96',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]],
-  ['isvalid_2',['IsValid',['../a00180.html#a194a3bdf8d8555323d42619d366a9281',1,'ProfitCalculator::ui::UIntOption']]]
+  ['helper_0',['Helper',['../a00184.html#ae6abf513084576f82740f1a062738be3',1,'ProfitCalculator::Utils']]],
+  ['hotkey_1',['HotKey',['../a00152.html#a37672218dacd8ceb8e6561d8c3ae7885',1,'ProfitCalculator::ModConfig']]],
+  ['hover_2',['Hover',['../a00160.html#a8ddf55fdf44e6d002f34256412ec5fdc',1,'ProfitCalculator::ui::BaseOption']]],
+  ['hoveredsound_3',['HoveredSound',['../a00160.html#ae66195cba996709480fa26c679e8cdac',1,'ProfitCalculator::ui::BaseOption']]]
 ];

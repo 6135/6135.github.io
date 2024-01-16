@@ -8,7 +8,7 @@ var a00144 =
     [ "receiveLeftClick", "a00144.html#a4cec96cf95a3ed544664650e084d487a", null ],
     [ "setSeason", "a00144.html#a560a085fdce325a9db5b299a4559bf73", null ],
     [ "update", "a00144.html#a991798d3944043a2d0ad29ae574919c2", null ],
-    [ "updateMenu", "a00144.html#ac02cd10a3d1c1c9d4142782097b9891c", null ],
+    [ "UpdateMenu", "a00144.html#a694a47e5647115d1ca7f547940f89250", null ],
     [ "CrossSeason", "a00144.html#ae1cf781d045b27bbad6a1be91e48daa4", null ],
     [ "Day", "a00144.html#a8bbc40bc83323805f691f0214ac5f60c", null ],
     [ "exampleString", "a00144.html#ab6de2e1bd4e44b31d17fa05040aa329b", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Stardew Profit Calculator: C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/ModEntry.cs Source File</title>
+<title>Stardew Profit Calculator: ModEntry.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,7 +97,7 @@ $(function(){initNavTree('a00044_source.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/ModEntry.cs</div></div>
+  <div class="headertitle"><div class="title">ModEntry.cs</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="a00044.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using </span>System;</div>
@@ -234,14 +234,14 @@ $(function(){initNavTree('a00044_source.html',''); initResizable(); });
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordflow">if</span> (mainMenu?.isProfitCalculatorOpen != <span class="keyword">null</span> &amp;&amp; !mainMenu.<a class="code hl_property" href="a00144.html#a371d1649031bb9f49ec178dacc6a1d96">isProfitCalculatorOpen</a>)</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    mainMenu.isProfitCalculatorOpen = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    mainMenu.<a class="code hl_function" href="a00144.html#ac02cd10a3d1c1c9d4142782097b9891c">updateMenu</a>();</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    mainMenu.<a class="code hl_function" href="a00144.html#a694a47e5647115d1ca7f547940f89250">UpdateMenu</a>();</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                    Game1.activeClickableMenu = mainMenu;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    Game1.playSound(<span class="stringliteral">&quot;bigSelect&quot;</span>);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                }</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mainMenu?.isProfitCalculatorOpen != <span class="keyword">null</span>)</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                    mainMenu.isProfitCalculatorOpen = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    mainMenu.<a class="code hl_function" href="a00144.html#ac02cd10a3d1c1c9d4142782097b9891c">updateMenu</a>();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                    mainMenu.<a class="code hl_function" href="a00144.html#a694a47e5647115d1ca7f547940f89250">UpdateMenu</a>();</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    DropdownOption.ActiveDropdown = <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    Game1.activeClickableMenu = <span class="keyword">null</span>;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                    Game1.playSound(<span class="stringliteral">&quot;bigDeSelect&quot;</span>);</div>
@@ -251,7 +251,7 @@ $(function(){initNavTree('a00044_source.html',''); initResizable(); });
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keyword">private</span> <span class="keywordtype">void</span> OnMouseWheelScrolled(<span class="keywordtype">object</span> sender, MouseWheelScrolledEventArgs e)</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            DropdownOption.ActiveDropdown?.ReceiveScrollWheelAction(e.Delta);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <a class="code hl_class" href="a00172.html">DropdownOption</a>.<a class="code hl_variable" href="a00172.html#a83cbc91fef03928727b95d7f88bc6240">ActiveDropdown</a>?.ReceiveScrollWheelAction(e.Delta);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        }</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>}</div>
@@ -265,11 +265,13 @@ $(function(){initNavTree('a00044_source.html',''); initResizable(); });
 <div class="ttc" id="aa00108_html"><div class="ttname"><a href="a00108.html">JsonAssets.IApi</a></div><div class="ttdef"><b>Definition</b> <a href="a00008_source.html#l00010">IApi.cs:11</a></div></div>
 <div class="ttc" id="aa00112_html"><div class="ttname"><a href="a00112.html">DynamicGameAssets.IDynamicGameAssetsApi</a></div><div class="ttdef"><b>Definition</b> <a href="a00011_source.html#l00006">IDynamicGameAssetsApi.cs:7</a></div></div>
 <div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">GenericModConfigMenu.IGenericModConfigMenuApi</a></div><div class="ttdoc">The API which lets other mods add a config ui through Generic Mod Config Menu.</div><div class="ttdef"><b>Definition</b> <a href="a00014_source.html#l00007">IGenericModConfigMenu.cs:8</a></div></div>
-<div class="ttc" id="aa00120_html"><div class="ttname"><a href="a00120.html">ProfitCalculator.main.Calculator</a></div><div class="ttdef"><b>Definition</b> <a href="a00017_source.html#l00009">Calculator.cs:10</a></div></div>
+<div class="ttc" id="aa00120_html"><div class="ttname"><a href="a00120.html">ProfitCalculator.main.Calculator</a></div><div class="ttdoc">Class used to calculate the profits for crops. Contains all the settings for the calculator and the f...</div><div class="ttdef"><b>Definition</b> <a href="a00017_source.html#l00012">Calculator.cs:13</a></div></div>
 <div class="ttc" id="aa00144_html"><div class="ttname"><a href="a00144.html">ProfitCalculator.menus.ProfitCalculatorMainMenu</a></div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00016">ProfitCalculatorMainMenu.cs:17</a></div></div>
-<div class="ttc" id="aa00144_html_a371d1649031bb9f49ec178dacc6a1d96"><div class="ttname"><a href="a00144.html#a371d1649031bb9f49ec178dacc6a1d96">ProfitCalculator.menus.ProfitCalculatorMainMenu.isProfitCalculatorOpen</a></div><div class="ttdeci">bool isProfitCalculatorOpen</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00055">ProfitCalculatorMainMenu.cs:55</a></div></div>
-<div class="ttc" id="aa00144_html_ac02cd10a3d1c1c9d4142782097b9891c"><div class="ttname"><a href="a00144.html#ac02cd10a3d1c1c9d4142782097b9891c">ProfitCalculator.menus.ProfitCalculatorMainMenu.updateMenu</a></div><div class="ttdeci">void updateMenu()</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00560">ProfitCalculatorMainMenu.cs:560</a></div></div>
+<div class="ttc" id="aa00144_html_a371d1649031bb9f49ec178dacc6a1d96"><div class="ttname"><a href="a00144.html#a371d1649031bb9f49ec178dacc6a1d96">ProfitCalculator.menus.ProfitCalculatorMainMenu.isProfitCalculatorOpen</a></div><div class="ttdeci">bool isProfitCalculatorOpen</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00054">ProfitCalculatorMainMenu.cs:54</a></div></div>
+<div class="ttc" id="aa00144_html_a694a47e5647115d1ca7f547940f89250"><div class="ttname"><a href="a00144.html#a694a47e5647115d1ca7f547940f89250">ProfitCalculator.menus.ProfitCalculatorMainMenu.UpdateMenu</a></div><div class="ttdeci">void UpdateMenu()</div><div class="ttdef"><b>Definition</b> <a href="a00035_source.html#l00563">ProfitCalculatorMainMenu.cs:563</a></div></div>
 <div class="ttc" id="aa00152_html"><div class="ttname"><a href="a00152.html">ProfitCalculator.ModConfig</a></div><div class="ttdef"><b>Definition</b> <a href="a00041_source.html#l00006">ModConfig.cs:7</a></div></div>
+<div class="ttc" id="aa00172_html"><div class="ttname"><a href="a00172.html">ProfitCalculator.ui.DropdownOption</a></div><div class="ttdef"><b>Definition</b> <a href="a00065_source.html#l00012">DropdownOption.cs:13</a></div></div>
+<div class="ttc" id="aa00172_html_a83cbc91fef03928727b95d7f88bc6240"><div class="ttname"><a href="a00172.html#a83cbc91fef03928727b95d7f88bc6240">ProfitCalculator.ui.DropdownOption.ActiveDropdown</a></div><div class="ttdeci">static DropdownOption ActiveDropdown</div><div class="ttdef"><b>Definition</b> <a href="a00065_source.html#l00043">DropdownOption.cs:43</a></div></div>
 <div class="ttc" id="aa00184_html"><div class="ttname"><a href="a00184.html">ProfitCalculator.Utils</a></div><div class="ttdef"><b>Definition</b> <a href="a00074_source.html#l00014">Utils.cs:15</a></div></div>
 <div class="ttc" id="aa00184_html_a3c1377679c4a9af1d3079da5b13a0591"><div class="ttname"><a href="a00184.html#a3c1377679c4a9af1d3079da5b13a0591">ProfitCalculator.Utils.Initialize</a></div><div class="ttdeci">static void Initialize(IModHelper? _helper, IMonitor? _monitor, IApi? jApi=null, IDynamicGameAssetsApi? dApi=null)</div><div class="ttdef"><b>Definition</b> <a href="a00074_source.html#l00025">Utils.cs:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

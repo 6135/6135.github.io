@@ -109,7 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab62f01253a1d451f81ad34f625760c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <code>Crop</code> class. It's used to create a new instance of the class.  <br /></td></tr>
 <tr class="separator:ab62f01253a1d451f81ad34f625760c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576ac6bb75409ff79675778968916930" id="r_a576ac6bb75409ff79675778968916930"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a576ac6bb75409ff79675778968916930">getSeedPrice</a> ()</td></tr>
-<tr class="memdesc:a576ac6bb75409ff79675778968916930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the seed buying price of the crop.  <br /></td></tr>
+<tr class="memdesc:a576ac6bb75409ff79675778968916930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the seed buying price of the crop. Used to calculate the seed purchasing loss and it's per day value. If the seed price is not set, then it's calculated from the first seed in the seeds array. This is made for the override.  <br /></td></tr>
 <tr class="separator:a576ac6bb75409ff79675778968916930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cc5d15b91779adc9f899682b87a75d" id="r_a58cc5d15b91779adc9f899682b87a75d"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58cc5d15b91779adc9f899682b87a75d">Equals</a> (object? obj)</td></tr>
 <tr class="memdesc:a58cc5d15b91779adc9f899682b87a75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether two crops are equal or not. Two crops are equal if they have the same ID.  <br /></td></tr>
@@ -427,7 +427,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the seed buying price of the crop. </p>
+<p>Retrieves the seed buying price of the crop. Used to calculate the seed purchasing loss and it's per day value. If the seed price is not set, then it's calculated from the first seed in the seeds array. This is made for the override. </p>
 <dl class="section return"><dt>Returns</dt><dd>Seed buying price of the crop. <code>int</code></dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="a00020_source.html#l00138">138</a> of file <a class="el" href="a00020_source.html">Crop.cs</a>.</p>
@@ -946,7 +946,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/main/<a class="el" href="a00020_source.html">Crop.cs</a></li>
+<li>main/<a class="el" href="a00020_source.html">Crop.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

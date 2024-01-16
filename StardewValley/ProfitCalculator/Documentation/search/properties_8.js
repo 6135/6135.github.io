@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['label_0',['Label',['../a00160.html#aa8c2925146fa1ebdc100836345045338',1,'ProfitCalculator::ui::BaseOption']]]
+  ['japi_0',['JApi',['../a00184.html#a77517fdb7146b9fa2c4aafb133740605',1,'ProfitCalculator::Utils']]]
 ];

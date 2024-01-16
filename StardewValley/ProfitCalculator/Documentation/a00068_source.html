@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Stardew Profit Calculator: C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/ui/TextOption.cs Source File</title>
+<title>Stardew Profit Calculator: ui/TextOption.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -109,18 +109,20 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00083.html">ProfitCalculator.ui</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">internal</span> <span class="keyword">class </span>TextOption : BaseOption, IKeyboardSubscriber</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="a00176.html">   10</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="a00176.html">TextOption</a> : <a class="code hl_class" href="a00160.html">BaseOption</a>, IKeyboardSubscriber</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">private</span> Texture2D Tex;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">private</span> SpriteFont Font = Game1.smallFont;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">protected</span> <span class="keywordtype">bool</span> SelectedImpl;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00176.html#a527180230b67a81004b99db173ffb0cf">   14</a></span>        <span class="keyword">protected</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="a00176.html#a527180230b67a81004b99db173ffb0cf">SelectedImpl</a>;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">protected</span> readonly Func&lt;string&gt; ValueGetter;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">protected</span> readonly Action&lt;string&gt; ValueSetter;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">   16</a></span>        <span class="keyword">protected</span> readonly Func&lt;string&gt; <a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">   17</a></span>        <span class="keyword">protected</span> readonly Action&lt;string&gt; <a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> Selected</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">   19</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">Selected</a></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keyword">get</span> =&gt; this.SelectedImpl;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keyword">get</span> =&gt; this.<a class="code hl_variable" href="a00176.html#a527180230b67a81004b99db173ffb0cf">SelectedImpl</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            <span class="keyword">set</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">if</span> (this.SelectedImpl == value)</div>
@@ -136,8 +138,10 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        }</div>
+</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">public</span> TextOption(</div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="a00176.html#aaa97f1086daacfd2211a3bade5ddc5f2">   38</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="a00176.html#aaa97f1086daacfd2211a3bade5ddc5f2">TextOption</a>(</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordtype">int</span> x,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordtype">int</span> y,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            Func&lt;string&gt; name,</div>
@@ -146,24 +150,30 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            Action&lt;string&gt; valueSetter</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>         ) : base(x, y, 192, 48, name, label, label)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            this.setTexture(Game1.content.Load&lt;Texture2D&gt;(<span class="stringliteral">&quot;LooseSprites\\textBox&quot;</span>));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            this.<a class="code hl_function" href="a00176.html#acfbaaf3fa4dd6192c7504184fd5d0b89">setTexture</a>(Game1.content.Load&lt;Texture2D&gt;(<span class="stringliteral">&quot;LooseSprites\\textBox&quot;</span>));</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            this.ValueGetter = valueGetter;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            this.ValueSetter = valueSetter;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        }</div>
+</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> setTexture(Texture2D tex)</div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="a00176.html#acfbaaf3fa4dd6192c7504184fd5d0b89">   52</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#acfbaaf3fa4dd6192c7504184fd5d0b89">setTexture</a>(Texture2D tex)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            this.Tex = tex;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            ClickableComponent.bounds.Width = tex.Width;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            ClickableComponent.bounds.Height = tex.Height;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> setFont(SpriteFont font)</div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="a00176.html#ae98906ee07c859e3148c5d84336e4a9b">   59</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#ae98906ee07c859e3148c5d84336e4a9b">setFont</a>(SpriteFont font)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            this.Font = font;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Draw(SpriteBatch b)</div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="a00176.html#a6fe7611fe3519df7319318a706137377">   64</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a6fe7611fe3519df7319318a706137377">Draw</a>(SpriteBatch b)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            b.Draw(</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                this.Tex,</div>
@@ -178,7 +188,7 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                );</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="comment">// Copied from game code - caret and https://github.com/spacechase0/StardewValleyMods/blob/develop/SpaceShared/ui/Element.cs#L91</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">string</span> text = this.ValueGetter();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordtype">string</span> text = this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>();</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            Vector2 vector2;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="keywordtype">float</span> writeBarOffset = 26f;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">for</span> (vector2 = this.Font.MeasureString(text); vector2.X &gt; (float)this.Tex.Width - writeBarOffset; vector2 = this.Font.MeasureString(text))</div>
@@ -203,10 +213,12 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            b.DrawString(this.Font, text, this.<a class="code hl_property" href="a00160.html#a474fe8da9d2cb482194663bf7c7e2fd3">Position</a> + <span class="keyword">new</span> Vector2(16, 12), Game1.textColor, 0, Vector2.Zero, 1f, SpriteEffects.None, 0.35f);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> RecieveTextInput(<span class="keywordtype">char</span> inputChar)</div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="a00176.html#a8087608c8935a06e983f8393b5235bf0">  106</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a8087608c8935a06e983f8393b5235bf0">RecieveTextInput</a>(<span class="keywordtype">char</span> inputChar)</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            this.ReceiveInput(inputChar.ToString());</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            this.<a class="code hl_function" href="a00176.html#ab539a770079c40424e021f824593d1fb">ReceiveInput</a>(inputChar.ToString());</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="comment">// Copied from game code</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">switch</span> (inputChar)</div>
@@ -239,54 +251,85 @@ $(function(){initNavTree('a00068_source.html',''); initResizable(); });
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            }</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keyword">public</span> <span class="keywordtype">void</span> RecieveTextInput(<span class="keywordtype">string</span> text)</div>
+<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="a00176.html#a0538216f6be3f183e59035181f75eb6e">  143</a></span>        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a0538216f6be3f183e59035181f75eb6e">RecieveTextInput</a>(<span class="keywordtype">string</span> text)</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            this.ReceiveInput(text);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            this.<a class="code hl_function" href="a00176.html#ab539a770079c40424e021f824593d1fb">ReceiveInput</a>(text);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        }</div>
+</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> RecieveCommandInput(<span class="keywordtype">char</span> command)</div>
+<div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="a00176.html#a93229f46689092d3fb7e476f8724d9a2">  149</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a93229f46689092d3fb7e476f8724d9a2">RecieveCommandInput</a>(<span class="keywordtype">char</span> command)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">if</span> (command == <span class="charliteral">&#39;\b&#39;</span> &amp;&amp; this.ValueGetter().Length &gt; 0)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="keywordflow">if</span> (command == <span class="charliteral">&#39;\b&#39;</span> &amp;&amp; this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Length &gt; 0)</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            {</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                Game1.playSound(<span class="stringliteral">&quot;tinyWhip&quot;</span>);</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                this.ValueSetter(this.ValueGetter().Substring(0, this.ValueGetter().Length - 1));</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Substring(0, this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Length - 1));</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            }</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> RecieveSpecialInput(Keys key)</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="a00176.html#a0275f2ede4462fb23b35d49fb54b49f9">  159</a></span>        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a0275f2ede4462fb23b35d49fb54b49f9">RecieveSpecialInput</a>(Keys key)</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
+</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">        /*********</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">        ** Protected methods</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">        *********/</span></div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> ReceiveInput(<span class="keywordtype">string</span> str)</div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="a00176.html#ab539a770079c40424e021f824593d1fb">  167</a></span>        <span class="keyword">protected</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#ab539a770079c40424e021f824593d1fb">ReceiveInput</a>(<span class="keywordtype">string</span> str)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        {</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="comment">//this.String += str; to value setter and getter</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            this.ValueSetter(this.ValueGetter() + str);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>() + str);</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
+</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> beforeReceiveLeftClick(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
+<div class="foldopen" id="foldopen00173" data-start="{" data-end="}">
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="a00176.html#a511ca05fd3e93c2eb22490e0da1d6204">  173</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a511ca05fd3e93c2eb22490e0da1d6204">beforeReceiveLeftClick</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            base.beforeReceiveLeftClick(x, y);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <span class="keywordflow">if</span> (this.Selected &amp;&amp; !this.<a class="code hl_property" href="a00160.html#a9d8059e54a821797bc22824f0cfde7fe">ClickableComponent</a>.containsPoint(x, y))</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <span class="keywordflow">if</span> (this.<a class="code hl_property" href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">Selected</a> &amp;&amp; !this.<a class="code hl_property" href="a00160.html#a9d8059e54a821797bc22824f0cfde7fe">ClickableComponent</a>.containsPoint(x, y))</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            {</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                this.Selected = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            }</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
+</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> executeClick()</div>
+<div class="foldopen" id="foldopen00182" data-start="{" data-end="}">
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="a00176.html#a5209474144ea6774c91074bbe056ae07">  182</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00176.html#a5209474144ea6774c91074bbe056ae07">executeClick</a>()</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        {</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            base.executeClick();</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            this.Selected = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
+</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
+</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
 <div class="ttc" id="aa00083_html"><div class="ttname"><a href="a00083.html">ProfitCalculator.ui</a></div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00007">BaseOption.cs:8</a></div></div>
+<div class="ttc" id="aa00160_html"><div class="ttname"><a href="a00160.html">ProfitCalculator.ui.BaseOption</a></div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00009">BaseOption.cs:10</a></div></div>
 <div class="ttc" id="aa00160_html_a474fe8da9d2cb482194663bf7c7e2fd3"><div class="ttname"><a href="a00160.html#a474fe8da9d2cb482194663bf7c7e2fd3">ProfitCalculator.ui.BaseOption.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00049">BaseOption.cs:49</a></div></div>
 <div class="ttc" id="aa00160_html_a9d8059e54a821797bc22824f0cfde7fe"><div class="ttname"><a href="a00160.html#a9d8059e54a821797bc22824f0cfde7fe">ProfitCalculator.ui.BaseOption.ClickableComponent</a></div><div class="ttdeci">ClickableComponent ClickableComponent</div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00033">BaseOption.cs:34</a></div></div>
+<div class="ttc" id="aa00176_html"><div class="ttname"><a href="a00176.html">ProfitCalculator.ui.TextOption</a></div><div class="ttdef"><b>Definition</b> <a href="#l00010">TextOption.cs:11</a></div></div>
+<div class="ttc" id="aa00176_html_a0275f2ede4462fb23b35d49fb54b49f9"><div class="ttname"><a href="a00176.html#a0275f2ede4462fb23b35d49fb54b49f9">ProfitCalculator.ui.TextOption.RecieveSpecialInput</a></div><div class="ttdeci">virtual void RecieveSpecialInput(Keys key)</div><div class="ttdef"><b>Definition</b> <a href="#l00159">TextOption.cs:159</a></div></div>
+<div class="ttc" id="aa00176_html_a0538216f6be3f183e59035181f75eb6e"><div class="ttname"><a href="a00176.html#a0538216f6be3f183e59035181f75eb6e">ProfitCalculator.ui.TextOption.RecieveTextInput</a></div><div class="ttdeci">void RecieveTextInput(string text)</div><div class="ttdef"><b>Definition</b> <a href="#l00143">TextOption.cs:143</a></div></div>
+<div class="ttc" id="aa00176_html_a40284dea6266b4c32030cc9ceffc50d3"><div class="ttname"><a href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ProfitCalculator.ui.TextOption.ValueSetter</a></div><div class="ttdeci">readonly Action&lt; string &gt; ValueSetter</div><div class="ttdef"><b>Definition</b> <a href="#l00017">TextOption.cs:17</a></div></div>
+<div class="ttc" id="aa00176_html_a511ca05fd3e93c2eb22490e0da1d6204"><div class="ttname"><a href="a00176.html#a511ca05fd3e93c2eb22490e0da1d6204">ProfitCalculator.ui.TextOption.beforeReceiveLeftClick</a></div><div class="ttdeci">override void beforeReceiveLeftClick(int x, int y)</div><div class="ttdef"><b>Definition</b> <a href="#l00173">TextOption.cs:173</a></div></div>
+<div class="ttc" id="aa00176_html_a5209474144ea6774c91074bbe056ae07"><div class="ttname"><a href="a00176.html#a5209474144ea6774c91074bbe056ae07">ProfitCalculator.ui.TextOption.executeClick</a></div><div class="ttdeci">override void executeClick()</div><div class="ttdef"><b>Definition</b> <a href="#l00182">TextOption.cs:182</a></div></div>
+<div class="ttc" id="aa00176_html_a527180230b67a81004b99db173ffb0cf"><div class="ttname"><a href="a00176.html#a527180230b67a81004b99db173ffb0cf">ProfitCalculator.ui.TextOption.SelectedImpl</a></div><div class="ttdeci">bool SelectedImpl</div><div class="ttdef"><b>Definition</b> <a href="#l00014">TextOption.cs:14</a></div></div>
+<div class="ttc" id="aa00176_html_a58ce3bf65cea690c88256d8f8a535c4e"><div class="ttname"><a href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">ProfitCalculator.ui.TextOption.Selected</a></div><div class="ttdeci">bool Selected</div><div class="ttdef"><b>Definition</b> <a href="#l00019">TextOption.cs:20</a></div></div>
+<div class="ttc" id="aa00176_html_a6fe7611fe3519df7319318a706137377"><div class="ttname"><a href="a00176.html#a6fe7611fe3519df7319318a706137377">ProfitCalculator.ui.TextOption.Draw</a></div><div class="ttdeci">override void Draw(SpriteBatch b)</div><div class="ttdef"><b>Definition</b> <a href="#l00064">TextOption.cs:64</a></div></div>
+<div class="ttc" id="aa00176_html_a8087608c8935a06e983f8393b5235bf0"><div class="ttname"><a href="a00176.html#a8087608c8935a06e983f8393b5235bf0">ProfitCalculator.ui.TextOption.RecieveTextInput</a></div><div class="ttdeci">void RecieveTextInput(char inputChar)</div><div class="ttdef"><b>Definition</b> <a href="#l00106">TextOption.cs:106</a></div></div>
+<div class="ttc" id="aa00176_html_a93229f46689092d3fb7e476f8724d9a2"><div class="ttname"><a href="a00176.html#a93229f46689092d3fb7e476f8724d9a2">ProfitCalculator.ui.TextOption.RecieveCommandInput</a></div><div class="ttdeci">virtual void RecieveCommandInput(char command)</div><div class="ttdef"><b>Definition</b> <a href="#l00149">TextOption.cs:149</a></div></div>
+<div class="ttc" id="aa00176_html_a9c4b50eed4e763ac6e93695bbcf3cdb7"><div class="ttname"><a href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ProfitCalculator.ui.TextOption.ValueGetter</a></div><div class="ttdeci">readonly Func&lt; string &gt; ValueGetter</div><div class="ttdef"><b>Definition</b> <a href="#l00016">TextOption.cs:16</a></div></div>
+<div class="ttc" id="aa00176_html_aaa97f1086daacfd2211a3bade5ddc5f2"><div class="ttname"><a href="a00176.html#aaa97f1086daacfd2211a3bade5ddc5f2">ProfitCalculator.ui.TextOption.TextOption</a></div><div class="ttdeci">TextOption(int x, int y, Func&lt; string &gt; name, Func&lt; string &gt; label, Func&lt; string &gt; valueGetter, Action&lt; string &gt; valueSetter)</div><div class="ttdef"><b>Definition</b> <a href="#l00038">TextOption.cs:38</a></div></div>
+<div class="ttc" id="aa00176_html_ab539a770079c40424e021f824593d1fb"><div class="ttname"><a href="a00176.html#ab539a770079c40424e021f824593d1fb">ProfitCalculator.ui.TextOption.ReceiveInput</a></div><div class="ttdeci">virtual void ReceiveInput(string str)</div><div class="ttdef"><b>Definition</b> <a href="#l00167">TextOption.cs:167</a></div></div>
+<div class="ttc" id="aa00176_html_acfbaaf3fa4dd6192c7504184fd5d0b89"><div class="ttname"><a href="a00176.html#acfbaaf3fa4dd6192c7504184fd5d0b89">ProfitCalculator.ui.TextOption.setTexture</a></div><div class="ttdeci">void setTexture(Texture2D tex)</div><div class="ttdef"><b>Definition</b> <a href="#l00052">TextOption.cs:52</a></div></div>
+<div class="ttc" id="aa00176_html_ae98906ee07c859e3148c5d84336e4a9b"><div class="ttname"><a href="a00176.html#ae98906ee07c859e3148c5d84336e4a9b">ProfitCalculator.ui.TextOption.setFont</a></div><div class="ttdeci">void setFont(SpriteFont font)</div><div class="ttdef"><b>Definition</b> <a href="#l00059">TextOption.cs:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

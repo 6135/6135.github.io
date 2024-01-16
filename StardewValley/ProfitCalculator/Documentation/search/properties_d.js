@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tooltip_0',['Tooltip',['../a00160.html#a0ea2d90fd16de05e533539f936872fde',1,'ProfitCalculator::ui::BaseOption']]]
+  ['requestwidth_0',['RequestWidth',['../a00172.html#acacf6dc6e9268ef8426f6e003569944f',1,'ProfitCalculator::ui::DropdownOption']]]
 ];

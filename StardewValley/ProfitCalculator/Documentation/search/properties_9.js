@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['maxday_0',['MaxDay',['../a00144.html#ab19bae9f014278f17a928e034701deab',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]],
-  ['maxmoney_1',['MaxMoney',['../a00144.html#a855b9bde7a8f05b88ca7cc72bdeccb92',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]],
-  ['minday_2',['MinDay',['../a00144.html#aa6ff3dccc0d22ca5797e447237376f32',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]],
-  ['monitor_3',['Monitor',['../a00184.html#a658b39cfba3473adaf5dac1f80b2bee2',1,'ProfitCalculator::Utils']]]
+  ['label_0',['Label',['../a00160.html#aa8c2925146fa1ebdc100836345045338',1,'ProfitCalculator.ui.BaseOption.Label'],['../a00172.html#a00d26adb7822f2984732205ff1951f64',1,'ProfitCalculator.ui.DropdownOption.Label']]],
+  ['labels_1',['Labels',['../a00172.html#aa07d956c40119501e392beb5980852d9',1,'ProfitCalculator::ui::DropdownOption']]]
 ];

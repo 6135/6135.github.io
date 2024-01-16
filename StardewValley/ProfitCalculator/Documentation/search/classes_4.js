@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['profitcalculatormainmenu_0',['ProfitCalculatorMainMenu',['../a00144.html',1,'ProfitCalculator::menus']]]
+  ['modconfig_0',['ModConfig',['../a00152.html',1,'ProfitCalculator']]]
 ];

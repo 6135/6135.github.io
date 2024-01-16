@@ -1,11 +1,10 @@
 var a00120 =
 [
     [ "Calculator", "a00120.html#a49bbc4f6e609cd77ade26d90a6a93cb0", null ],
-    [ "Calculate", "a00120.html#af11925d5cefa790e6471540079ce5f2a", null ],
-    [ "getAverageValueForCropAfterModifiers", "a00120.html#ad3f7b59ee811fb574cdcc2fb49006616", null ],
-    [ "getAverageValueMultiplierForCrop", "a00120.html#a637a64ed11fda9ac8ed92b836fb8836f", null ],
-    [ "printCropChanceTablesForAllFarmingLevels", "a00120.html#a99f306e590000cbb3c269119024c68aa", null ],
-    [ "printCropChanceTablesForAllFarmingLevelsAndFertilizerType", "a00120.html#a80789b7cf9155447435176d5d8a7351f", null ],
+    [ "GetAverageValueForCropAfterModifiers", "a00120.html#a9654d82971d13fc836930c7796c884a5", null ],
+    [ "GetAverageValueMultiplierForCrop", "a00120.html#a138aff144fdcd3aebc142922a9a1f71e", null ],
+    [ "PrintCropChanceTablesForAllFarmingLevels", "a00120.html#a552cbec31d1b679c2e1d40272775fc0e", null ],
+    [ "PrintCropChanceTablesForAllFarmingLevelsAndFertilizerType", "a00120.html#a224ed837517dabaca61f50b6852c89a0", null ],
     [ "refreshCropList", "a00120.html#a00aa2cbcf2d046738fbcfce219aa0bca", null ],
     [ "RetrieveCropInfos", "a00120.html#a0b3fd90892d2d640a9b642225fef02e1", null ],
     [ "RetrieveCropsAsOrderderList", "a00120.html#ad6451dfd299f2888a1566b14645b13b6", null ],

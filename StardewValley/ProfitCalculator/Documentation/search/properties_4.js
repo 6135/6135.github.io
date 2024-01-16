@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fertilizerquality_0',['FertilizerQuality',['../a00144.html#a8eeb99eae34d133e22fdbd535e631310',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]]
+  ['enablemobileapp_0',['EnableMobileApp',['../a00152.html#a077809696c9d440806e747490028e1dc',1,'ProfitCalculator::ModConfig']]],
+  ['examplestring_1',['exampleString',['../a00144.html#ab6de2e1bd4e44b31d17fa05040aa329b',1,'ProfitCalculator::menus::ProfitCalculatorMainMenu']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Stardew Profit Calculator: C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/ui/CropBox.cs Source File</title>
+<title>Stardew Profit Calculator: ui/CropBox.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -107,13 +107,15 @@ $(function(){initNavTree('a00062_source.html',''); initResizable(); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00083.html">ProfitCalculator.ui</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">internal</span> <span class="keyword">class </span>CropBox : BaseOption</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00168.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="a00168.html">CropBox</a> : <a class="code hl_class" href="a00160.html">BaseOption</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">private</span> <a class="code hl_class" href="a00128.html">CropInfo</a> cropInfo;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">private</span> SpriteFont Font = Game1.smallFont;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">private</span> <span class="keywordtype">string</span> mainText = <span class="stringliteral">&quot;PlaceHolder&quot;</span>;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">public</span> CropBox(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <a class="code hl_class" href="a00128.html">CropInfo</a> crop) : base(x, y, w, h, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>)</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00168.html#a1dec1f266348c0de4e9025d639b1e4c6">   14</a></span>        <span class="keyword">public</span> <a class="code hl_function" href="a00168.html#a1dec1f266348c0de4e9025d639b1e4c6">CropBox</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h, <a class="code hl_class" href="a00128.html">CropInfo</a> crop) : base(x, y, w, h, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>, () =&gt; crop.<a class="code hl_class" href="a00124.html">Crop</a>.<a class="code hl_property" href="a00160.html#a2f807ee977c615a721c73c659aec4522">Name</a>)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            this.mainText = crop.<a class="code hl_variable" href="a00128.html#aa0782f3d1b36144671bf6384c778b0c5">Crop</a>.<a class="code hl_variable" href="a00124.html#a2e01cf86806bf4067c9a5e8354cbcb33">Name</a>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">if</span> (this.mainText.Length &lt; 1)</div>
@@ -122,8 +124,10 @@ $(function(){initNavTree('a00062_source.html',''); initResizable(); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            cropInfo = crop;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        }</div>
+</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Draw(SpriteBatch b)</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00168.html#a1c2623a61fcc3b102d0b67cabd98e2d0">   24</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00168.html#a1c2623a61fcc3b102d0b67cabd98e2d0">Draw</a>(SpriteBatch b)</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            Game1.DrawBox(</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                (<span class="keywordtype">int</span>)this.<a class="code hl_property" href="a00160.html#a474fe8da9d2cb482194663bf7c7e2fd3">Position</a>.X,</div>
@@ -175,17 +179,23 @@ $(function(){initNavTree('a00062_source.html',''); initResizable(); });
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                Color.DarkOrange</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            );</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
+</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
 <div class="ttc" id="aa00081_html"><div class="ttname"><a href="a00081.html">ProfitCalculator.main</a></div><div class="ttdef"><b>Definition</b> <a href="a00017_source.html#l00007">Calculator.cs:8</a></div></div>
 <div class="ttc" id="aa00083_html"><div class="ttname"><a href="a00083.html">ProfitCalculator.ui</a></div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00007">BaseOption.cs:8</a></div></div>
 <div class="ttc" id="aa00124_html"><div class="ttname"><a href="a00124.html">ProfitCalculator.main.Crop</a></div><div class="ttdoc">Class Crop models a crop from the game storing all relevant information about it.</div><div class="ttdef"><b>Definition</b> <a href="a00020_source.html#l00017">Crop.cs:18</a></div></div>
 <div class="ttc" id="aa00124_html_a074489bfd6c27c092be5cdc943c13a40"><div class="ttname"><a href="a00124.html#a074489bfd6c27c092be5cdc943c13a40">ProfitCalculator.main.Crop.Id</a></div><div class="ttdeci">readonly int Id</div><div class="ttdoc">Property Id represents the crop id AKA the slot in the sprite sheet.</div><div class="ttdef"><b>Definition</b> <a href="a00020_source.html#l00023">Crop.cs:23</a></div></div>
 <div class="ttc" id="aa00124_html_a2e01cf86806bf4067c9a5e8354cbcb33"><div class="ttname"><a href="a00124.html#a2e01cf86806bf4067c9a5e8354cbcb33">ProfitCalculator.main.Crop.Name</a></div><div class="ttdeci">readonly string Name</div><div class="ttdoc">Property Name represents the crop's name.</div><div class="ttdef"><b>Definition</b> <a href="a00020_source.html#l00029">Crop.cs:29</a></div></div>
-<div class="ttc" id="aa00128_html"><div class="ttname"><a href="a00128.html">ProfitCalculator.main.CropInfo</a></div><div class="ttdef"><b>Definition</b> <a href="a00023_source.html#l00010">CropInfo.cs:11</a></div></div>
-<div class="ttc" id="aa00128_html_aa0782f3d1b36144671bf6384c778b0c5"><div class="ttname"><a href="a00128.html#aa0782f3d1b36144671bf6384c778b0c5">ProfitCalculator.main.CropInfo.Crop</a></div><div class="ttdeci">readonly Crop Crop</div><div class="ttdef"><b>Definition</b> <a href="a00023_source.html#l00012">CropInfo.cs:12</a></div></div>
+<div class="ttc" id="aa00128_html"><div class="ttname"><a href="a00128.html">ProfitCalculator.main.CropInfo</a></div><div class="ttdoc">Contains information about a crop and its profit.</div><div class="ttdef"><b>Definition</b> <a href="a00023_source.html#l00013">CropInfo.cs:14</a></div></div>
+<div class="ttc" id="aa00128_html_aa0782f3d1b36144671bf6384c778b0c5"><div class="ttname"><a href="a00128.html#aa0782f3d1b36144671bf6384c778b0c5">ProfitCalculator.main.CropInfo.Crop</a></div><div class="ttdeci">readonly Crop Crop</div><div class="ttdoc">The crop.</div><div class="ttdef"><b>Definition</b> <a href="a00023_source.html#l00016">CropInfo.cs:16</a></div></div>
+<div class="ttc" id="aa00160_html"><div class="ttname"><a href="a00160.html">ProfitCalculator.ui.BaseOption</a></div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00009">BaseOption.cs:10</a></div></div>
 <div class="ttc" id="aa00160_html_a2f807ee977c615a721c73c659aec4522"><div class="ttname"><a href="a00160.html#a2f807ee977c615a721c73c659aec4522">ProfitCalculator.ui.BaseOption.Name</a></div><div class="ttdeci">Func&lt; string &gt; Name</div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00046">BaseOption.cs:46</a></div></div>
 <div class="ttc" id="aa00160_html_a474fe8da9d2cb482194663bf7c7e2fd3"><div class="ttname"><a href="a00160.html#a474fe8da9d2cb482194663bf7c7e2fd3">ProfitCalculator.ui.BaseOption.Position</a></div><div class="ttdeci">Vector2 Position</div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00049">BaseOption.cs:49</a></div></div>
+<div class="ttc" id="aa00168_html"><div class="ttname"><a href="a00168.html">ProfitCalculator.ui.CropBox</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">CropBox.cs:9</a></div></div>
+<div class="ttc" id="aa00168_html_a1c2623a61fcc3b102d0b67cabd98e2d0"><div class="ttname"><a href="a00168.html#a1c2623a61fcc3b102d0b67cabd98e2d0">ProfitCalculator.ui.CropBox.Draw</a></div><div class="ttdeci">override void Draw(SpriteBatch b)</div><div class="ttdef"><b>Definition</b> <a href="#l00024">CropBox.cs:24</a></div></div>
+<div class="ttc" id="aa00168_html_a1dec1f266348c0de4e9025d639b1e4c6"><div class="ttname"><a href="a00168.html#a1dec1f266348c0de4e9025d639b1e4c6">ProfitCalculator.ui.CropBox.CropBox</a></div><div class="ttdeci">CropBox(int x, int y, int w, int h, CropInfo crop)</div><div class="ttdef"><b>Definition</b> <a href="#l00014">CropBox.cs:14</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

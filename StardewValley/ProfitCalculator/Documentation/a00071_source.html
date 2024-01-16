@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Stardew Profit Calculator: C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/ui/UIntOption.cs Source File</title>
+<title>Stardew Profit Calculator: ui/UIntOption.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -108,7 +108,7 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00083.html">ProfitCalculator.ui</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00180.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="a00180.html">UIntOption</a> : TextOption</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00180.html">    8</a></span>    <span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="a00180.html">UIntOption</a> : <a class="code hl_class" href="a00176.html">TextOption</a></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="a00180.html#aa9f610cc853ae068617d2a661cc73efb">   10</a></span>        <span class="keyword">protected</span> readonly Func&lt;uint&gt; <a class="code hl_variable" href="a00180.html#aa9f610cc853ae068617d2a661cc73efb">Max</a>;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="a00180.html#adba923b2792d9f5c628639ad0b0f457e">   11</a></span>        <span class="keyword">protected</span> readonly Func&lt;uint&gt; <a class="code hl_variable" href="a00180.html#adba923b2792d9f5c628639ad0b0f457e">Min</a>;</div>
@@ -137,7 +137,7 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">                ** Accessors</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">                *********/</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00180.html#a194a3bdf8d8555323d42619d366a9281">   35</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="a00180.html#a194a3bdf8d8555323d42619d366a9281">IsValid</a> =&gt; <span class="keywordtype">int</span>.TryParse(this.ValueGetter(), out _);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00180.html#a194a3bdf8d8555323d42619d366a9281">   35</a></span>        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code hl_property" href="a00180.html#a194a3bdf8d8555323d42619d366a9281">IsValid</a> =&gt; <span class="keywordtype">int</span>.TryParse(this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>(), out _);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">        /*********</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        ** Protected methods</span></div>
@@ -152,7 +152,7 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; str.Length; ++i)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                <span class="keywordtype">char</span> c = str[i];</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span> (!<span class="keywordtype">char</span>.IsDigit(c) &amp;&amp; !(c == <span class="charliteral">&#39;-&#39;</span> &amp;&amp; this.ValueGetter() == <span class="stringliteral">&quot;&quot;</span> &amp;&amp; i == 0))</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordflow">if</span> (!<span class="keywordtype">char</span>.IsDigit(c) &amp;&amp; !(c == <span class="charliteral">&#39;-&#39;</span> &amp;&amp; this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>() == <span class="stringliteral">&quot;&quot;</span> &amp;&amp; i == 0))</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    valid = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    <span class="keywordflow">break</span>;</div>
@@ -163,18 +163,18 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="comment">//if the parsed string equals to utin 0 then set to 0, this should allow for easy clearing of the uintbox by typing 0 and being able to type a new number after that</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">if</span> (uint.Parse(<span class="keyword">this</span>.ValueGetter() + str) == 0)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                this.ValueSetter(<span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(<span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="comment">//if clamping is enabled then clamp the value to the min and max</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">if</span> (this.EnableClamping)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                uint val = Math.Clamp(uint.Parse(<span class="keyword">this</span>.ValueGetter() + str), <span class="keyword">this</span>.Min(), <span class="keyword">this</span>.Max());</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                this.ValueSetter(val.ToString());</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(val.ToString());</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            }</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                this.ValueSetter(this.ValueGetter() + str);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>() + str);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
 </div>
@@ -182,14 +182,14 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="a00180.html#a0d29d64b27e13d9f701b7dcce5ed6ed0">   76</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00180.html#a0d29d64b27e13d9f701b7dcce5ed6ed0">RecieveCommandInput</a>(<span class="keywordtype">char</span> command)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (command == <span class="charliteral">&#39;\b&#39;</span> &amp;&amp; this.ValueGetter().Length &gt; 0)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keywordflow">if</span> (command == <span class="charliteral">&#39;\b&#39;</span> &amp;&amp; this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Length &gt; 0)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            {</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                Game1.playSound(<span class="stringliteral">&quot;tinyWhip&quot;</span>);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="comment">//if length is 1 then set to 0 or if multiple 0s then set to 0, else remove last char</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span> (this.ValueGetter().Length == 1 || this.ValueGetter().All(c =&gt; c == <span class="charliteral">&#39;0&#39;</span>))</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    this.ValueSetter(<span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">if</span> (this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Length == 1 || this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().All(c =&gt; c == <span class="charliteral">&#39;0&#39;</span>))</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                    this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(<span class="stringliteral">&quot;0&quot;</span>);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    this.ValueSetter(this.ValueGetter().Substring(0, this.ValueGetter().Length - 1));</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                    this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Substring(0, this.<a class="code hl_variable" href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ValueGetter</a>().Length - 1));</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
 </div>
@@ -201,12 +201,12 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">if</span> (key == Keys.Up)</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                uint val = Math.Clamp(uint.Parse(<span class="keyword">this</span>.ValueGetter()) + 1, <span class="keyword">this</span>.Min(), <span class="keyword">this</span>.Max());</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                this.ValueSetter(val.ToString());</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(val.ToString());</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            }</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (key == Keys.Down)</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                uint val = Math.Clamp(uint.Parse(<span class="keyword">this</span>.ValueGetter()) - 1, <span class="keyword">this</span>.Min(), <span class="keyword">this</span>.Max());</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                this.ValueSetter(val.ToString());</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(val.ToString());</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
 </div>
@@ -216,8 +216,8 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="a00180.html#af5f16cf8fa18b137d5a94f965f2d3a87">  105</a></span>        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00180.html#af5f16cf8fa18b137d5a94f965f2d3a87">beforeReceiveLeftClick</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            base.beforeReceiveLeftClick(x, y);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">if</span> (!this.Selected &amp;&amp; this.EnableClamping)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                this.ValueSetter(</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">if</span> (!this.<a class="code hl_property" href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">Selected</a> &amp;&amp; this.EnableClamping)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                this.<a class="code hl_variable" href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ValueSetter</a>(</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                    Math.Clamp(</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        uint.Parse(<span class="keyword">this</span>.ValueGetter()),</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        <span class="keyword">this</span>.Min(),</div>
@@ -230,6 +230,10 @@ $(function(){initNavTree('a00071_source.html',''); initResizable(); });
 </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
 <div class="ttc" id="aa00083_html"><div class="ttname"><a href="a00083.html">ProfitCalculator.ui</a></div><div class="ttdef"><b>Definition</b> <a href="a00056_source.html#l00007">BaseOption.cs:8</a></div></div>
+<div class="ttc" id="aa00176_html"><div class="ttname"><a href="a00176.html">ProfitCalculator.ui.TextOption</a></div><div class="ttdef"><b>Definition</b> <a href="a00068_source.html#l00010">TextOption.cs:11</a></div></div>
+<div class="ttc" id="aa00176_html_a40284dea6266b4c32030cc9ceffc50d3"><div class="ttname"><a href="a00176.html#a40284dea6266b4c32030cc9ceffc50d3">ProfitCalculator.ui.TextOption.ValueSetter</a></div><div class="ttdeci">readonly Action&lt; string &gt; ValueSetter</div><div class="ttdef"><b>Definition</b> <a href="a00068_source.html#l00017">TextOption.cs:17</a></div></div>
+<div class="ttc" id="aa00176_html_a58ce3bf65cea690c88256d8f8a535c4e"><div class="ttname"><a href="a00176.html#a58ce3bf65cea690c88256d8f8a535c4e">ProfitCalculator.ui.TextOption.Selected</a></div><div class="ttdeci">bool Selected</div><div class="ttdef"><b>Definition</b> <a href="a00068_source.html#l00019">TextOption.cs:20</a></div></div>
+<div class="ttc" id="aa00176_html_a9c4b50eed4e763ac6e93695bbcf3cdb7"><div class="ttname"><a href="a00176.html#a9c4b50eed4e763ac6e93695bbcf3cdb7">ProfitCalculator.ui.TextOption.ValueGetter</a></div><div class="ttdeci">readonly Func&lt; string &gt; ValueGetter</div><div class="ttdef"><b>Definition</b> <a href="a00068_source.html#l00016">TextOption.cs:16</a></div></div>
 <div class="ttc" id="aa00180_html"><div class="ttname"><a href="a00180.html">ProfitCalculator.ui.UIntOption</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">UIntOption.cs:9</a></div></div>
 <div class="ttc" id="aa00180_html_a0d29d64b27e13d9f701b7dcce5ed6ed0"><div class="ttname"><a href="a00180.html#a0d29d64b27e13d9f701b7dcce5ed6ed0">ProfitCalculator.ui.UIntOption.RecieveCommandInput</a></div><div class="ttdeci">override void RecieveCommandInput(char command)</div><div class="ttdef"><b>Definition</b> <a href="#l00076">UIntOption.cs:76</a></div></div>
 <div class="ttc" id="aa00180_html_a194a3bdf8d8555323d42619d366a9281"><div class="ttname"><a href="a00180.html#a194a3bdf8d8555323d42619d366a9281">ProfitCalculator.ui.UIntOption.IsValid</a></div><div class="ttdeci">bool IsValid</div><div class="ttdef"><b>Definition</b> <a href="#l00035">UIntOption.cs:35</a></div></div>

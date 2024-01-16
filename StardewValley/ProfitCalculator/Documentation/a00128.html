@@ -99,60 +99,86 @@ $(function(){initNavTree('a00128.html',''); initResizable(); });
   <div class="headertitle"><div class="title">ProfitCalculator.main.CropInfo Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains information about a crop and its profit.  
+ <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5b3925e9615bd264742e86d354c2c09" id="r_ac5b3925e9615bd264742e86d354c2c09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b3925e9615bd264742e86d354c2c09">CropInfo</a> (<a class="el" href="a00124.html">Crop</a> crop, double totalProfit, double profitPerDay, double totalSeedLoss, double seedLossPerDay, double totalFertilizerLoss, double fertilizerLossPerDay, <a class="el" href="a00184.html#a74b4cb72e3b862f725e70790a7d049ef">Utils.ProduceType</a> produceType, int duration, int totalHarvests, int growthTime, int regrowthTime, int productCount, double chanceOfExtraProduct, double chanceOfNormalQuality, double chanceOfSilverQuality, double chanceOfGoldQuality, double chanceOfIridiumQuality)</td></tr>
+<tr class="memdesc:ac5b3925e9615bd264742e86d354c2c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the CropInfo class.  <br /></td></tr>
 <tr class="separator:ac5b3925e9615bd264742e86d354c2c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11e721e3b9f1cc5167c238c134cb570" id="r_af11e721e3b9f1cc5167c238c134cb570"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af11e721e3b9f1cc5167c238c134cb570">ToString</a> ()</td></tr>
+<tr class="memdesc:af11e721e3b9f1cc5167c238c134cb570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string that represents the current CropInfo in json format.  <br /></td></tr>
 <tr class="separator:af11e721e3b9f1cc5167c238c134cb570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c4d176dc529e1b9558e08eb74ec67b" id="r_ab8c4d176dc529e1b9558e08eb74ec67b"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8c4d176dc529e1b9558e08eb74ec67b">Equals</a> (object obj)</td></tr>
+<tr class="memdesc:ab8c4d176dc529e1b9558e08eb74ec67b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the specified CropInfo is equal to the current CropInfo.  <br /></td></tr>
 <tr class="separator:ab8c4d176dc529e1b9558e08eb74ec67b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f3dcea32fa415af18a1e808becdaa3c" id="r_a9f3dcea32fa415af18a1e808becdaa3c"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f3dcea32fa415af18a1e808becdaa3c">GetHashCode</a> ()</td></tr>
+<tr class="memdesc:a9f3dcea32fa415af18a1e808becdaa3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hash code for this CropInfo.  <br /></td></tr>
 <tr class="separator:a9f3dcea32fa415af18a1e808becdaa3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa0782f3d1b36144671bf6384c778b0c5" id="r_aa0782f3d1b36144671bf6384c778b0c5"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="a00124.html">Crop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0782f3d1b36144671bf6384c778b0c5">Crop</a></td></tr>
+<tr class="memdesc:aa0782f3d1b36144671bf6384c778b0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The crop.  <br /></td></tr>
 <tr class="separator:aa0782f3d1b36144671bf6384c778b0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722a8f542f15edd1ac448615183ce532" id="r_a722a8f542f15edd1ac448615183ce532"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a722a8f542f15edd1ac448615183ce532">TotalProfit</a></td></tr>
+<tr class="memdesc:a722a8f542f15edd1ac448615183ce532"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total profit.  <br /></td></tr>
 <tr class="separator:a722a8f542f15edd1ac448615183ce532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95477ecc45adf1fde54ffaa817cbaec9" id="r_a95477ecc45adf1fde54ffaa817cbaec9"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95477ecc45adf1fde54ffaa817cbaec9">ProfitPerDay</a></td></tr>
+<tr class="memdesc:a95477ecc45adf1fde54ffaa817cbaec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The profit per day.  <br /></td></tr>
 <tr class="separator:a95477ecc45adf1fde54ffaa817cbaec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbc08194e01329d29abfff0b6f019cb" id="r_addbc08194e01329d29abfff0b6f019cb"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addbc08194e01329d29abfff0b6f019cb">TotalSeedLoss</a></td></tr>
+<tr class="memdesc:addbc08194e01329d29abfff0b6f019cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total seed loss.  <br /></td></tr>
 <tr class="separator:addbc08194e01329d29abfff0b6f019cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d404902b54ef480cfdbd0656ab794ff" id="r_a0d404902b54ef480cfdbd0656ab794ff"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d404902b54ef480cfdbd0656ab794ff">SeedLossPerDay</a></td></tr>
+<tr class="memdesc:a0d404902b54ef480cfdbd0656ab794ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The seed loss per day.  <br /></td></tr>
 <tr class="separator:a0d404902b54ef480cfdbd0656ab794ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d8cdd6c304d862f55e93ef3a9f4520" id="r_ab6d8cdd6c304d862f55e93ef3a9f4520"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6d8cdd6c304d862f55e93ef3a9f4520">TotalFertilizerLoss</a></td></tr>
+<tr class="memdesc:ab6d8cdd6c304d862f55e93ef3a9f4520"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total fertilizer loss.  <br /></td></tr>
 <tr class="separator:ab6d8cdd6c304d862f55e93ef3a9f4520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46ac5ec6f58b248a7c91ce99f539797d" id="r_a46ac5ec6f58b248a7c91ce99f539797d"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ac5ec6f58b248a7c91ce99f539797d">FertilizerLossPerDay</a></td></tr>
+<tr class="memdesc:a46ac5ec6f58b248a7c91ce99f539797d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fertilizer loss per day.  <br /></td></tr>
 <tr class="separator:a46ac5ec6f58b248a7c91ce99f539797d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e9f8db44a098ad6a581894ebae43a82" id="r_a1e9f8db44a098ad6a581894ebae43a82"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="a00184.html#a74b4cb72e3b862f725e70790a7d049ef">Utils.ProduceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e9f8db44a098ad6a581894ebae43a82">ProduceType</a></td></tr>
+<tr class="memdesc:a1e9f8db44a098ad6a581894ebae43a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The produce type.  <br /></td></tr>
 <tr class="separator:a1e9f8db44a098ad6a581894ebae43a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a206fac857eb505b4cb6c6744654afa86" id="r_a206fac857eb505b4cb6c6744654afa86"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a206fac857eb505b4cb6c6744654afa86">Duration</a></td></tr>
+<tr class="memdesc:a206fac857eb505b4cb6c6744654afa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">The duration.  <br /></td></tr>
 <tr class="separator:a206fac857eb505b4cb6c6744654afa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a658d44e66b47b5b5ccac5ab30fffa4fc" id="r_a658d44e66b47b5b5ccac5ab30fffa4fc"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a658d44e66b47b5b5ccac5ab30fffa4fc">TotalHarvests</a></td></tr>
+<tr class="memdesc:a658d44e66b47b5b5ccac5ab30fffa4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total harvests.  <br /></td></tr>
 <tr class="separator:a658d44e66b47b5b5ccac5ab30fffa4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb51a69cadf83d88e6eda65791437da" id="r_a1fb51a69cadf83d88e6eda65791437da"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fb51a69cadf83d88e6eda65791437da">GrowthTime</a></td></tr>
+<tr class="memdesc:a1fb51a69cadf83d88e6eda65791437da"><td class="mdescLeft">&#160;</td><td class="mdescRight">The growth time.  <br /></td></tr>
 <tr class="separator:a1fb51a69cadf83d88e6eda65791437da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b433ce9a2738642f5e37074327f608" id="r_ad2b433ce9a2738642f5e37074327f608"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2b433ce9a2738642f5e37074327f608">RegrowthTime</a></td></tr>
+<tr class="memdesc:ad2b433ce9a2738642f5e37074327f608"><td class="mdescLeft">&#160;</td><td class="mdescRight">The regrowth time.  <br /></td></tr>
 <tr class="separator:ad2b433ce9a2738642f5e37074327f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b92665fa684214ba1d9c872aaa6d76" id="r_a12b92665fa684214ba1d9c872aaa6d76"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12b92665fa684214ba1d9c872aaa6d76">ProductCount</a></td></tr>
+<tr class="memdesc:a12b92665fa684214ba1d9c872aaa6d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The product count.  <br /></td></tr>
 <tr class="separator:a12b92665fa684214ba1d9c872aaa6d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a846f56f9c4f30abdb08f7513a8cc9c" id="r_a1a846f56f9c4f30abdb08f7513a8cc9c"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a846f56f9c4f30abdb08f7513a8cc9c">ChanceOfExtraProduct</a></td></tr>
+<tr class="memdesc:a1a846f56f9c4f30abdb08f7513a8cc9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chance of extra product.  <br /></td></tr>
 <tr class="separator:a1a846f56f9c4f30abdb08f7513a8cc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08235e5a31714825fe67fa85e66bc3ec" id="r_a08235e5a31714825fe67fa85e66bc3ec"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08235e5a31714825fe67fa85e66bc3ec">ChanceOfNormalQuality</a></td></tr>
+<tr class="memdesc:a08235e5a31714825fe67fa85e66bc3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chance of normal quality.  <br /></td></tr>
 <tr class="separator:a08235e5a31714825fe67fa85e66bc3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e12d1d6413bb7840421ce29ee5bb334" id="r_a9e12d1d6413bb7840421ce29ee5bb334"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e12d1d6413bb7840421ce29ee5bb334">ChanceOfSilverQuality</a></td></tr>
+<tr class="memdesc:a9e12d1d6413bb7840421ce29ee5bb334"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chance of silver quality.  <br /></td></tr>
 <tr class="separator:a9e12d1d6413bb7840421ce29ee5bb334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8d945ccd9fb8a8a70099a0c5bfae3a1" id="r_aa8d945ccd9fb8a8a70099a0c5bfae3a1"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8d945ccd9fb8a8a70099a0c5bfae3a1">ChanceOfGoldQuality</a></td></tr>
+<tr class="memdesc:aa8d945ccd9fb8a8a70099a0c5bfae3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chance of gold quality.  <br /></td></tr>
 <tr class="separator:aa8d945ccd9fb8a8a70099a0c5bfae3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46796ee375b37f68654e9ca61a8aa4e" id="r_aa46796ee375b37f68654e9ca61a8aa4e"><td class="memItemLeft" align="right" valign="top">readonly double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46796ee375b37f68654e9ca61a8aa4e">ChanceOfIridiumQuality</a></td></tr>
+<tr class="memdesc:aa46796ee375b37f68654e9ca61a8aa4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chance of iridium quality.  <br /></td></tr>
 <tr class="separator:aa46796ee375b37f68654e9ca61a8aa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00010">10</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<div class="textblock"><p>Contains information about a crop and its profit. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00013">13</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac5b3925e9615bd264742e86d354c2c09" name="ac5b3925e9615bd264742e86d354c2c09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5b3925e9615bd264742e86d354c2c09">&#9670;&#160;</a></span>CropInfo()</h2>
@@ -253,7 +279,32 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00035">35</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>Initializes a new instance of the CropInfo class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crop</td><td>The crop. </td></tr>
+    <tr><td class="paramname">totalProfit</td><td>The total profit. Calculated from <code>totalProfit = totalProfit - (totalSeedLoss + totalFertilizerLoss)</code> </td></tr>
+    <tr><td class="paramname">profitPerDay</td><td>The profit per day. </td></tr>
+    <tr><td class="paramname">totalSeedLoss</td><td>The total seed loss. </td></tr>
+    <tr><td class="paramname">seedLossPerDay</td><td>The seed loss per day. </td></tr>
+    <tr><td class="paramname">totalFertilizerLoss</td><td>The total fertilizer loss. </td></tr>
+    <tr><td class="paramname">fertilizerLossPerDay</td><td>The fertilizer loss per day. </td></tr>
+    <tr><td class="paramname">produceType</td><td>The produce type. </td></tr>
+    <tr><td class="paramname">duration</td><td>The duration. </td></tr>
+    <tr><td class="paramname">totalHarvests</td><td>The total harvests. </td></tr>
+    <tr><td class="paramname">growthTime</td><td>The growth time. </td></tr>
+    <tr><td class="paramname">regrowthTime</td><td>The regrowth time. </td></tr>
+    <tr><td class="paramname">productCount</td><td>The product count. </td></tr>
+    <tr><td class="paramname">chanceOfExtraProduct</td><td>The chance of extra product. </td></tr>
+    <tr><td class="paramname">chanceOfNormalQuality</td><td>The chance of normal quality. </td></tr>
+    <tr><td class="paramname">chanceOfSilverQuality</td><td>The chance of silver quality. </td></tr>
+    <tr><td class="paramname">chanceOfGoldQuality</td><td>The chance of gold quality. </td></tr>
+    <tr><td class="paramname">chanceOfIridiumQuality</td><td>The chance of iridium quality. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00090">90</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -273,7 +324,16 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00083">83</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>Determines whether the specified CropInfo is equal to the current CropInfo. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the specified CropInfo is equal to the current CropInfo; otherwise, <code>false</code>. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00147">147</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -292,7 +352,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00106">106</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>Returns the hash code for this CropInfo. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 32-bit signed integer hash code. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00174">174</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -311,7 +374,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00059">59</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>Returns a string that represents the current CropInfo in json format. </p>
+<dl class="section return"><dt>Returns</dt><dd>A string that represents the current CropInfo in json format. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00118">118</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -328,7 +394,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00029">29</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The chance of extra product. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00055">55</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -344,7 +412,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00032">32</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The chance of gold quality. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00064">64</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -360,7 +430,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00033">33</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The chance of iridium quality. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00067">67</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -376,7 +448,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00030">30</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The chance of normal quality. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00058">58</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -392,7 +466,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00031">31</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The chance of silver quality. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00061">61</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -408,7 +484,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00012">12</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The crop. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00016">16</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -424,7 +502,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00023">23</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The duration. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00040">40</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -440,7 +520,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00020">20</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The fertilizer loss per day. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00034">34</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -456,7 +538,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00025">25</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The growth time. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00046">46</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -472,7 +556,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00022">22</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The produce type. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00037">37</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -488,7 +574,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00027">27</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The product count. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00052">52</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -504,7 +592,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00014">14</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The profit per day. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00022">22</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -520,7 +610,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00026">26</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The regrowth time. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00049">49</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -536,7 +628,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00017">17</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The seed loss per day. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00028">28</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -552,7 +646,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00019">19</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The total fertilizer loss. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00031">31</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -568,7 +664,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00024">24</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The total harvests. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00043">43</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -584,7 +682,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00013">13</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The total profit. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00019">19</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
@@ -600,12 +700,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00016">16</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
+<p>The total seed loss. </p>
+
+<p class="definition">Definition at line <a class="el" href="a00023_source.html#l00025">25</a> of file <a class="el" href="a00023_source.html">CropInfo.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/guibs/Documents/GitHub/MobileProfitCalculator/main/<a class="el" href="a00023_source.html">CropInfo.cs</a></li>
+<li>main/<a class="el" href="a00023_source.html">CropInfo.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
